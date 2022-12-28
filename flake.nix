@@ -5,6 +5,7 @@
   inputs.plover = { url = "github:openstenoproject/plover"; flake = false; };
   inputs.rtf-tokenize = { url = "github:openstenoproject/rtf_tokenize"; flake = false; };
   inputs.plover-stroke = { url = "github:openstenoproject/plover_stroke"; flake = false; };
+  inputs.plover-machine-hid = { url = "github:dnaq/plover-machine-hid"; flake = false; };
 
   outputs = { self, nixpkgs, flake-utils, ... }@sources:
     flake-utils.lib.eachDefaultSystem
@@ -23,7 +24,7 @@
         packages.default = self.packages.${system}.plover;
         packages.plover-with-plugins = f: let
           plover = self.packages.${system}.plover;
-          plugins = pkgs.python3Packages.callPackage ./plugins.nix { inherit plover; };
+          plugins = pkgs.python3Packages.callPackage ./plugins.nix { inherit plover sources; };
         in
           plover.overrideAttrs (old: {
             propagatedBuildInputs = old.propagatedBuildInputs ++ (f plugins);

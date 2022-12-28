@@ -1,14 +1,9 @@
-{ lib, plover, hid, bitstring, buildPythonPackage, fetchFromGitHub }:
+{ sources, lib, plover, hid, bitstring, buildPythonPackage, fetchFromGitHub }:
 {
   plover_machine_hid = buildPythonPackage rec {
     pname = "plover-machine-hid";
     version = "git";
-    src = fetchFromGitHub {
-      owner = "dnaq";
-      repo = "plover-machine-hid";
-      rev = "3112cabd180b512d6c85a5dda259e9be9996ce32";
-      sha256 = "sha256-AS+sNsJuFi+KZPdNNhGE8zgjStfq1ZfBoNh+/xWUJKE=";
-    };
+    src = sources.plover-machine-hid;
     buildInputs = [ plover ];
     propagatedBuildInputs = [ hid bitstring ];
   };

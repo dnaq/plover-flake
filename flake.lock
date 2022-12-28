@@ -47,6 +47,22 @@
         "type": "github"
       }
     },
+    "plover-machine-hid": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1672241273,
+        "narHash": "sha256-AS+sNsJuFi+KZPdNNhGE8zgjStfq1ZfBoNh+/xWUJKE=",
+        "owner": "dnaq",
+        "repo": "plover-machine-hid",
+        "rev": "3112cabd180b512d6c85a5dda259e9be9996ce32",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dnaq",
+        "repo": "plover-machine-hid",
+        "type": "github"
+      }
+    },
     "plover-stroke": {
       "flake": false,
       "locked": {
@@ -84,6 +100,7 @@
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs",
         "plover": "plover",
+        "plover-machine-hid": "plover-machine-hid",
         "plover-stroke": "plover-stroke",
         "plover_plugins_registry": "plover_plugins_registry",
         "rtf-tokenize": "rtf-tokenize"

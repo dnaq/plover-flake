@@ -4,6 +4,7 @@
   fetchPypi,
   lib,
   plover,
+  sources,
 }:
 let
   inherit (lib) extends;
@@ -21,7 +22,7 @@ let
   basicPlugins = final: prev: builtins.listToAttrs (map (p: pluginToAttr (makePloverPlugin p)) plugins);
   overrides = callPackage ./overrides.nix { };
 
-  initialPackages = self: callPackage ./extra-plugins.nix { inherit plover; };
+  initialPackages = self: callPackage ./extra-plugins.nix { inherit plover sources; };
 
   extensible-self = lib.makeExtensible
     (extends overrides
