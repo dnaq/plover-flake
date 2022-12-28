@@ -1,0 +1,542 @@
+[
+  {
+    "name": "alleycat-link",
+    "filename": "alleycat-link-0.4.4.tar.gz",
+    "version": "0.4.4",
+    "sha256": "ff3666480c0fbce0706aa283d13cc66167f11d04b9c3a1e1ca1e5642846a03b8"
+  },
+  {
+    "name": "plover-auto-identifier",
+    "filename": "plover_auto_identifier-0.1.2.tar.gz",
+    "version": "0.1.2",
+    "sha256": "bce5ccce802e58d79f25e50ed953b4a5a241d5301f652cf7e8536477d9c1d4e2"
+  },
+  {
+    "name": "plover-cards",
+    "filename": "plover_cards-0.2.1.post2.tar.gz",
+    "version": "0.2.1.post2",
+    "sha256": "50b7279c66301fbce571fe074ea7340a512db98a6ba80259daa9d2643b8b6f6d"
+  },
+  {
+    "name": "plover-casecat-dictionary",
+    "filename": "plover_casecat_dictionary-0.1.3.tar.gz",
+    "version": "0.1.3",
+    "sha256": "949011b41c0e40695d15770b5aa111d90a96c7834bcb9aa03d4f7fc4875e7ec5"
+  },
+  {
+    "name": "plover-cat",
+    "filename": "plover_cat-0.1.3.tar.gz",
+    "version": "0.1.3",
+    "sha256": "931e0609b0d76e7fbb8d4e448aaca3de6f7eed65145564cfdc5d51a56eb015b6"
+  },
+  {
+    "name": "plover-clippy",
+    "filename": "plover_clippy-0.1.0.tar.gz",
+    "version": "0.1.0",
+    "sha256": "50a02696d81feb7f0f995834eaf27506bc4cbb0efacb916fea72334ab04215c8"
+  },
+  {
+    "name": "plover-clippy-2",
+    "filename": "plover_clippy_2-0.0.5.tar.gz",
+    "version": "0.0.5",
+    "sha256": "f34cc8704526f87fd0416aa356c8c1217060d9362c7307fc1df770ed43400e73"
+  },
+  {
+    "name": "plover-clr-trans-state",
+    "filename": "plover-clr-trans-state-0.0.0.tar.gz",
+    "version": "0.0.0",
+    "sha256": "97f594201a420773ddff194c0657d7d851ef406967e899d0633b5e97bfd2f6f1"
+  },
+  {
+    "name": "plover-combo",
+    "filename": "plover-combo-1.0.2.tar.gz",
+    "version": "1.0.2",
+    "sha256": "bc2904549704a4bc3fcff1cd8bc785b0f4d6ad44377b404e18a458322490895b"
+  },
+  {
+    "name": "plover-comment",
+    "filename": "plover_comment-0.0.0.tar.gz",
+    "version": "0.0.0",
+    "sha256": "d8b21c1778452adff5a5c724b819a752deef590a7dc550bec31b043720b9f7b0"
+  },
+  {
+    "name": "plover-console-ui",
+    "filename": "plover_console_ui-1.2.3.tar.gz",
+    "version": "1.2.3",
+    "sha256": "85a99346d1047482dff1c2dfbb5766e29f0e929d980e2f77ef10299b72102faf"
+  },
+  {
+    "name": "plover-controller",
+    "filename": "plover-controller-0.0.12.tar.gz",
+    "version": "0.0.12",
+    "sha256": "b10f537b174c07ef8a8e1dc1a0629bc7bee33232f84551ee96c12fa1ab29e01b"
+  },
+  {
+    "name": "plover-current-time",
+    "filename": "plover_current_time-1.0.1.tar.gz",
+    "version": "1.0.1",
+    "sha256": "8e44791749428f4296a2cc6b9ea8ee178756580e761d2d747d6afc8b0f3f96d9"
+  },
+  {
+    "name": "plover-debugging-console",
+    "filename": "plover-debugging-console-0.2.5.tar.gz",
+    "version": "0.2.5",
+    "sha256": "51059182389e49b1b3854a453961af959332b9287189ef457b4c05cd6dcbe7f2"
+  },
+  {
+    "name": "plover-delay",
+    "filename": "plover_delay-0.0.0.tar.gz",
+    "version": "0.0.0",
+    "sha256": "e0206d8254e498b903317478931838e94d869cf6ffc05ef53a95910761bc5285"
+  },
+  {
+    "name": "plover-dict-commands",
+    "filename": "plover_dict_commands-0.2.5.tar.gz",
+    "version": "0.2.5",
+    "sha256": "922fcce55d74e986d03236509a44cdc81cc56e85588bfc748642c05ea3f293c4"
+  },
+  {
+    "name": "plover-dictionary-builder",
+    "filename": "plover_dictionary_builder-0.1.0.tar.gz",
+    "version": "0.1.0",
+    "sha256": "1c62308f6cd0f9ea8c05d9e324830883128c1983a89974ae968202f6ec1b3ac9"
+  },
+  {
+    "name": "plover-dictionary-patch",
+    "filename": "plover-dictionary-patch-0.0.4.tar.gz",
+    "version": "0.0.4",
+    "sha256": "69a066836960f2c39089be220b321a33462bfe4d0fedde4c81088d40a5fb8387"
+  },
+  {
+    "name": "plover-digitalcat-dictionary",
+    "filename": "plover_digitalcat_dictionary-0.1.2.tar.gz",
+    "version": "0.1.2",
+    "sha256": "20657921627eea3fa89ca31650e541675796e8f14ed5d9883090bc6439017db9"
+  },
+  {
+    "name": "plover-eclipse-dictionary",
+    "filename": "plover_eclipse_dictionary-0.1.1.tar.gz",
+    "version": "0.1.1",
+    "sha256": "51468176ad573ad5d55740432a6f6e5d0e10abb6b062119b0ca58d70049bed13"
+  },
+  {
+    "name": "plover-emoji",
+    "filename": "plover_emoji-0.0.4.tar.gz",
+    "version": "0.0.4",
+    "sha256": "db6611cd2a094859844b63f6ba2037df7929c4719457556586e9f6ab4f0b57ea"
+  },
+  {
+    "name": "plover-engine-server-2",
+    "filename": "plover_engine_server_2-0.0.8.tar.gz",
+    "version": "0.0.8",
+    "sha256": "48badd123ebd1d05ff53dba9e3bd0bf888c6e61dc9c20a4c51e1c0a3fe087bb2"
+  },
+  {
+    "name": "plover-excel-dictionary",
+    "filename": "plover_excel_dictionary-1.0.1.tar.gz",
+    "version": "1.0.1",
+    "sha256": "1c6ad1212fd05d09ad12fb7029374d30ccf5c5c39b7b64aab5d79289cea2cc51"
+  },
+  {
+    "name": "plover-fancytext",
+    "filename": "plover_fancytext-1.9.0.tar.gz",
+    "version": "1.9.0",
+    "sha256": "60e6b8a2171ff5989f2bd71710500d141a5b94fbb8c19acf3dff0da09dc75007"
+  },
+  {
+    "name": "plover-german-syllatype",
+    "filename": "plover-german-syllatype-1.3.1.tar.gz",
+    "version": "1.3.1",
+    "sha256": "c23a38f860efb53963146d0b897c14318971e8c722d7fe17715f19e2138b792e"
+  },
+  {
+    "name": "plover-grandjean",
+    "filename": "plover_grandjean-0.0.1.tar.gz",
+    "version": "0.0.1",
+    "sha256": "79c1fb5d8f1fb0cbe6ebb99a6cc5a26c935b96b9e682421ab19582e0a9a804f0"
+  },
+  {
+    "name": "plover-hjson-dictionary",
+    "filename": "plover_hjson_dictionary-0.0.2.tar.gz",
+    "version": "0.0.2",
+    "sha256": "08c23ebf960ed73519471e98d6acd2658ff9cfd4f985a99ac2ee460e62169bd5"
+  },
+  {
+    "name": "plover-italian-stentura",
+    "filename": "plover_italian_stentura-0.5.6.tar.gz",
+    "version": "0.5.6",
+    "sha256": "35dd51b0a3231e019f817ccdd4ba5c2867d52d4a240e6cad689688c2d768b9d9"
+  },
+  {
+    "name": "plover-json-lazy",
+    "filename": "plover_json_lazy-0.0.1.tar.gz",
+    "version": "0.0.1",
+    "sha256": "33067bf39e532af8dee11d1b1660dcb643e8ca6cb267c63fc60eb1de72202397"
+  },
+  {
+    "name": "plover-last-translation",
+    "filename": "plover_last_translation-0.0.2.tar.gz",
+    "version": "0.0.2",
+    "sha256": "9668236eec1da99f1e794e26fddd5a905c308f90a696211a2e65c4280b9b8dd9"
+  },
+  {
+    "name": "plover-layout-display",
+    "filename": "plover_layout_display-0.1.2.tar.gz",
+    "version": "0.1.2",
+    "sha256": "90ba7cafd71ec306811c8afe79174840304b5ecbca80c957f2b1a85b48f41f02"
+  },
+  {
+    "name": "plover-maajik",
+    "filename": "plover-maajik-1.0.0b2.tar.gz",
+    "version": "1.0.0b2",
+    "sha256": "3dec8cc43fd0e3b16a71dd1e268e0927a6e3378e23615ac0577e5a358cdce958"
+  },
+  {
+    "name": "plover-markdown-dictionary",
+    "filename": "plover-markdown-dictionary-0.2.0.tar.gz",
+    "version": "0.2.0",
+    "sha256": "41bc790ba6133cc5c6045fc06799d981013d0208a28b2fa3525860ed50134859"
+  },
+  {
+    "name": "plover-melani",
+    "filename": "plover_melani-0.6.0.tar.gz",
+    "version": "0.6.0",
+    "sha256": "40287aa71f0ea0438694f1ad1f97a85feff004e530b601af0d38924d5baf0915"
+  },
+  {
+    "name": "plover-merge-words",
+    "filename": "plover_merge_words-0.1.1.tar.gz",
+    "version": "0.1.1",
+    "sha256": "aa5dd70dfe2857f4057f10b4e7a65a95b6b8843af8f1dc363e39c10ac4041828"
+  },
+  {
+    "name": "plover-michela",
+    "filename": "plover_michela-2.0.0.tar.gz",
+    "version": "2.0.0",
+    "sha256": "2bb31d30da65cf0c7fb5cd50f3fff4011379481c1a7af9fd61ac1b158e22d303"
+  },
+  {
+    "name": "plover-midi",
+    "filename": "plover_midi-1.0.5.tar.gz",
+    "version": "1.0.5",
+    "sha256": "d3feafc62a56c8d76007b5f311ddfd8c2ed0c114373f8b80fbb8ea37964d0415"
+  },
+  {
+    "name": "plover-midi4text",
+    "filename": "plover_midi4text-0.0.4.tar.gz",
+    "version": "0.0.4",
+    "sha256": "43ae114eff2f4457d70f435c550a5c87670caa87c764e8488abdaccc441db16e"
+  },
+  {
+    "name": "plover-minimal-english-stenotype",
+    "filename": "plover_minimal_english_stenotype-1.1.0.tar.gz",
+    "version": "1.1.0",
+    "sha256": "7e0ee642a4bebb271a873c659615752ead0992206d9da3e79efe538128d205f6"
+  },
+  {
+    "name": "plover-mod-z",
+    "filename": "plover_mod_z-0.1.0.tar.gz",
+    "version": "0.1.0",
+    "sha256": "504c2e95c6a5bb3dcdd4b34ec6bbb6ff914f959313e32ccf4add7843c8ec397d"
+  },
+  {
+    "name": "plover-modal-dictionary",
+    "filename": "plover-modal-dictionary-0.0.3.tar.gz",
+    "version": "0.0.3",
+    "sha256": "a8baf91fa66f3e1cc6e166ba74ae3989178004ed04bc0e7ed9a7e9d9cb677350"
+  },
+  {
+    "name": "plover-next-stroke",
+    "filename": "plover-next-stroke-0.2.2.tar.gz",
+    "version": "0.2.2",
+    "sha256": "38b25c20297206a06ac91029be50c03f84c2c37cee898dd909ce2a139f6d510d"
+  },
+  {
+    "name": "plover-ninja",
+    "filename": "plover-ninja-0.0.13.tar.gz",
+    "version": "0.0.13",
+    "sha256": "114725f6afa96be1cbf9ae96c3a2d25321fa6159ff8762f565f1b12cac773426"
+  },
+  {
+    "name": "plover-number-format",
+    "filename": "plover_number_format-1.2.0.tar.gz",
+    "version": "1.2.0",
+    "sha256": "200b079c5d34b41e5aff5d9de85a1fbb5529ffbd58c580c699efbbe2d25696ad"
+  },
+  {
+    "name": "plover-oft-eva",
+    "filename": "plover_oft_eva-0.2.7.tar.gz",
+    "version": "0.2.7",
+    "sha256": "ce618dd6358c0e7881ee66f817537e37b821281ac631b1112e3c3e6958fbc543"
+  },
+  {
+    "name": "plover-open-url",
+    "filename": "plover_open_url-0.0.2.tar.gz",
+    "version": "0.0.2",
+    "sha256": "4d097d906893147ec450d1c02c89391489c2051a8d64fad07f28ae5cc7dbdc7d"
+  },
+  {
+    "name": "plover-palantype",
+    "filename": "plover_palantype-0.7.0.tar.gz",
+    "version": "0.7.0",
+    "sha256": "e79b34085bc2c24f520a76a7087feb1275e297e40ffd0fb9a29bc71c48d33594"
+  },
+  {
+    "name": "plover-palantype-DE",
+    "filename": "plover_palantype_DE-1.0.1.tar.gz",
+    "version": "1.0.1",
+    "sha256": "048d7477fb743304f69c57319354bbae7e0c2c1415610571656931adbd20630f"
+  },
+  {
+    "name": "plover-phenrsteno",
+    "filename": "plover-phenrsteno-0.2.3.tar.gz",
+    "version": "0.2.3",
+    "sha256": "4b57333e343c60ff38574a6efb6bc93ee9b2b18c5462529c8beab08de0aa50f4"
+  },
+  {
+    "name": "plover-phoenix-stenotype",
+    "filename": "plover_phoenix_stenotype-0.2.1.tar.gz",
+    "version": "0.2.1",
+    "sha256": "0c65e0ec29143be8fbcc26f76b604cc50265471f3a674aadb177a8b8158d13c4"
+  },
+  {
+    "name": "plover-plugins-manager",
+    "filename": "plover_plugins_manager-0.7.1.tar.gz",
+    "version": "0.7.1",
+    "sha256": "fd18966c6c4fb66fb49a10e2d2178455bea204abb2066e883aadb2ae3d7b9fdb"
+  },
+  {
+    "name": "plover-portuguese",
+    "filename": "plover_portuguese-0.2.1.tar.gz",
+    "version": "0.2.1",
+    "sha256": "1d4606d4328252867cfd4d04feb1191545a32f5788793b39ef3ce66a8f7bf4c5"
+  },
+  {
+    "name": "plover-python-dictionary",
+    "filename": "plover_python_dictionary-1.1.0.tar.gz",
+    "version": "1.1.0",
+    "sha256": "6251d398cb4a59469d39b19bb2bb05f8f52ca420782abf9a9b2e7b0d0e1e090b"
+  },
+  {
+    "name": "plover-regenpfeifer",
+    "filename": "plover_regenpfeifer-1.0.0.tar.gz",
+    "version": "1.0.0",
+    "sha256": "530de2487ca01f72b48d4dc53420cf517c088cb540c5e13d3f29e2042819b71a"
+  },
+  {
+    "name": "plover-retro-case",
+    "filename": "plover_retro_case-0.1.2.tar.gz",
+    "version": "0.1.2",
+    "sha256": "85d235e0f4eaad4196f0fd2bb7166804f440a68122e4b0be57cde715f67e47d4"
+  },
+  {
+    "name": "plover-retro-everything",
+    "filename": "plover_retro_everything-0.0.3.tar.gz",
+    "version": "0.0.3",
+    "sha256": "16471ced62db60fd44441431ec5f29df96cfb7b04b27491f473935f2cfce51b7"
+  },
+  {
+    "name": "plover-retro-quotes",
+    "filename": "plover_retro_quotes-0.0.2.tar.gz",
+    "version": "0.0.2",
+    "sha256": "08abb96ee7e545c92f468ee4ffae596c4490b129d5713c33bed959e14bab1412"
+  },
+  {
+    "name": "plover-retro-stringop",
+    "filename": "plover_retro_stringop-0.1.2.tar.gz",
+    "version": "0.1.2",
+    "sha256": "0a079faa5160829f649193586fc9fc7aed456b205cae30a8f97ae850fd9599ed"
+  },
+  {
+    "name": "plover-retro-surround",
+    "filename": "plover_retro_surround-0.0.4.tar.gz",
+    "version": "0.0.4",
+    "sha256": "8cae7c67c24aeaf74bac232e6f8450ddd2115fdf417a4ad86afd2b1193182cbe"
+  },
+  {
+    "name": "plover-retro-text-transform",
+    "filename": "plover_retro_text_transform-0.1.1.tar.gz",
+    "version": "0.1.1",
+    "sha256": "14c8cd94781313d2e86cd6a964b07d7b094818be328807dc0ad858a46e5d7c2a"
+  },
+  {
+    "name": "plover-roll-the-dice",
+    "filename": "plover_roll_the_dice-0.1.0.tar.gz",
+    "version": "0.1.0",
+    "sha256": "96e50e543e0677350936c2fd253e247fb3afdfcbd287136187f150e399694c17"
+  },
+  {
+    "name": "plover-rpn-calculator",
+    "filename": "plover-rpn-calculator-0.0.1.tar.gz",
+    "version": "0.0.1",
+    "sha256": "ce8dc52e8331ffd543537a0c826a3f2b3c6f9792a41872da8bf488524dfd0ddd"
+  },
+  {
+    "name": "plover-run-shell",
+    "filename": "plover_run_shell-0.0.4.tar.gz",
+    "version": "0.0.4",
+    "sha256": "1a7182ce0f9f9e7d6ce75c66a618b25cbdf71720479fb1cc82962b9eee9aa10a"
+  },
+  {
+    "name": "plover-russian-trillo",
+    "filename": "plover_russian_trillo-0.0.2.tar.gz",
+    "version": "0.0.2",
+    "sha256": "68f32f3897779fc7698ffc469a05db024d081b443d3f68e85db053225da87b8e"
+  },
+  {
+    "name": "plover-search-translation",
+    "filename": "plover-search-translation-0.6.0.tar.gz",
+    "version": "0.6.0",
+    "sha256": "4520dcbccbd9540ba963025893bc1b1c123109e8de1de4c2ac89715a38e7e28f"
+  },
+  {
+    "name": "plover-spanish-mqd",
+    "filename": "plover_spanish_mqd-2.1.3.tar.gz",
+    "version": "2.1.3",
+    "sha256": "25761be3f53478d89467cba29e4b4c67e4540478822ead1af599d5dedabb5766"
+  },
+  {
+    "name": "plover-spanish-system-eo-variant",
+    "filename": "plover_spanish_system_eo_variant-0.3.0.tar.gz",
+    "version": "0.3.0",
+    "sha256": "44a89bb422d6011e5a5aae36ca8adb79b0f529a0bc276ee697538204860e606c"
+  },
+  {
+    "name": "plover-start-words",
+    "filename": "plover_start_words-1.0.2.tar.gz",
+    "version": "1.0.2",
+    "sha256": "ec7cf07335c71c0d69deec2baf33ec816d70213f60e91aa01b47d9dbc456732d"
+  },
+  {
+    "name": "plover-startup-py",
+    "filename": "plover_startup_py-0.2.0.tar.gz",
+    "version": "0.2.0",
+    "sha256": "61dc4d853c2f127d426e1cc3a893ffd9884a26d249ccb4bdd137998168fad635"
+  },
+  {
+    "name": "plover-stenograph",
+    "filename": "plover-stenograph-2.0.4.tar.gz",
+    "version": "2.0.4",
+    "sha256": "5ec76793888ba2c247f87d8fe4a47bcc692ef39237652f452ef506c14b5494a6"
+  },
+  {
+    "name": "plover-stenograph-usb",
+    "filename": "plover_stenograph_usb-1.2.1.tar.gz",
+    "version": "1.2.1",
+    "sha256": "1fa21fe1af312bcb64eda8eb9c4d6f1fe2793bbaefcba2df655d635043415d9b"
+  },
+  {
+    "name": "plover-stenohid-test",
+    "filename": "plover-stenohid-test-0.1.0.dev2.tar.gz",
+    "version": "0.1.0.dev2",
+    "sha256": "899d0d75b4d727d76b651b54976cc24054a0afbad62304aaefc2d0e629be7d50"
+  },
+  {
+    "name": "plover-stenotype-extended",
+    "filename": "plover-stenotype-extended-1.0.0.tar.gz",
+    "version": "1.0.0",
+    "sha256": "202f5e1ace6d32f035de1f524d0b69e647d256f49eda5216cdb3d90aaa0165b5"
+  },
+  {
+    "name": "plover-stitching",
+    "filename": "plover_stitching-0.1.0.tar.gz",
+    "version": "0.1.0",
+    "sha256": "d3cc2c5537fcf6429ab6d38cd148ff47f85e5bdcd25fb25005ccdaf1a249c317"
+  },
+  {
+    "name": "plover-svg-layout-display",
+    "filename": "plover-svg-layout-display-0.0.7.tar.gz",
+    "version": "0.0.7",
+    "sha256": "b791e6525637c8fab56e7f5b2f390f802134fc25c560cf0475fe0d547d4c733b"
+  },
+  {
+    "name": "plover_system_switcher",
+    "filename": "plover_system_switcher-0.0.2.tar.gz",
+    "version": "0.0.2",
+    "sha256": "eebf0362b95e510ae3d0bdc0079ca8b0b90781ac0aee15d5ce729640c8d09258"
+  },
+  {
+    "name": "plover-tapey-tape",
+    "filename": "plover_tapey_tape-0.0.6.tar.gz",
+    "version": "0.0.6",
+    "sha256": "9e54902bb953e5bda5d678e60f561984197441697d4d83d1180978ab6bf5edfb"
+  },
+  {
+    "name": "plover-textarea",
+    "filename": "plover-textarea-0.0.2.tar.gz",
+    "version": "0.0.2",
+    "sha256": "60eff5ccedbb8d61d3a2da07624f0ac77526265c6f6e5399436bf72d12dca4f9"
+  },
+  {
+    "name": "plover-trayicon",
+    "filename": "plover_trayicon-0.0.0.tar.gz",
+    "version": "0.0.0",
+    "sha256": "fd0443af3532a8bb2a02786cc4e8a0285f8b27055b8f7daf763eed85bea4b264"
+  },
+  {
+    "name": "plover-treal",
+    "filename": "plover-treal-1.0.1.tar.gz",
+    "version": "1.0.1",
+    "sha256": "63413fa2585dbb478c9ad09e130645947e718b5e30c7690612648761b54ce746"
+  },
+  {
+    "name": "plover-uinput-output",
+    "filename": "plover-uinput-output-0.0.1.tar.gz",
+    "version": "0.0.1",
+    "sha256": "ca794a6e2d5022b5109a91ac7b852dc8db35bf2e9ac08da6adbc628b937b5064"
+  },
+  {
+    "name": "plover-unused-xtest-output",
+    "filename": "plover-unused-xtest-output-0.0.1.tar.gz",
+    "version": "0.0.1",
+    "sha256": "9bf1aa95f4c9e99e6ef1391d2253b855b460d03fb017dd24c94f0d5fac79960c"
+  },
+  {
+    "name": "plover-vcs-plugin",
+    "filename": "plover-vcs-plugin-0.1.6.tar.gz",
+    "version": "0.1.6",
+    "sha256": "9e84377627d7513649d1eb7a308c47b5a60b7ee01a38493aa85bf98e956cf3f0"
+  },
+  {
+    "name": "plover-vlc-commands",
+    "filename": "plover_vlc_commands-0.6.6.tar.gz",
+    "version": "0.6.6",
+    "sha256": "9ad45d1b2a0f9bb59d8c51d8ab9a5474ebcf74b9d61e039c837e916c8321a706"
+  },
+  {
+    "name": "plover-windows-brightness",
+    "filename": "plover_windows_brightness-0.0.2.tar.gz",
+    "version": "0.0.2",
+    "sha256": "af45ffc0bfd22ec422b8ce67c18545a565085090f38c25be5bbad261dfba34e9"
+  },
+  {
+    "name": "plover-word-tray",
+    "filename": "plover-word-tray-0.0.10.tar.gz",
+    "version": "0.0.10",
+    "sha256": "a2e90c453775fb91de89f0c61309ff0ace2073fbb1a354c7ae96e8e5f2636dc6"
+  },
+  {
+    "name": "plover-wpm-meter",
+    "filename": "plover_wpm_meter-0.2.3.tar.gz",
+    "version": "0.2.3",
+    "sha256": "262e7c58d4481cfb3dd746286f7d34f24dc3ab02600f51abff3597a00b7681c8"
+  },
+  {
+    "name": "plover-xtest-input",
+    "filename": "plover-xtest-input-0.0.1.tar.gz",
+    "version": "0.0.1",
+    "sha256": "977c69bc4056bcfd88db047c354d67599aff47e3b0ed6792d694bdee2dd13d7f"
+  },
+  {
+    "name": "plover-yaml-dictionary",
+    "filename": "plover_yaml_dictionary-0.0.1.tar.gz",
+    "version": "0.0.1",
+    "sha256": "12d9aad7ef5e93559ae5b0236a83b0bfb17697acd722f791cff58206e33023d6"
+  },
+  {
+    "name": "spectra-lexer",
+    "filename": "spectra_lexer-16.1.0.tar.gz",
+    "version": "16.1.0",
+    "sha256": "5384a41c3eabf90785d696e9162ba2cc9272306b51ae47006c8b1a2067f4722a"
+  }
+]
