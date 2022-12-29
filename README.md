@@ -36,3 +36,7 @@ Currently it is not possible in any decent way to replace the pyqt derivation
 used for building plover. This makes it hard to support plugins like
 plover2cat which require qtMultimedia, which is not enabled by default for pyqt5 in nixpkgs.
 If anyone figures out a good way to solve this, please let me know.
+
+## Note
+
+This flake will be renamed to github.com/dnaq/plover-flake in the near future
