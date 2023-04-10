@@ -55,9 +55,9 @@
   },
   {
     "name": "plover-comment",
-    "filename": "plover_comment-0.0.0.tar.gz",
-    "version": "0.0.0",
-    "sha256": "d8b21c1778452adff5a5c724b819a752deef590a7dc550bec31b043720b9f7b0"
+    "filename": "plover_comment-0.0.2.tar.gz",
+    "version": "0.0.2",
+    "sha256": "f615f9af999f35810cc5c59089cf264f1cce94085e077e443c9a8fb3b8634246"
   },
   {
     "name": "plover-console-ui",
