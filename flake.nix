@@ -20,15 +20,15 @@
             jq
           ];
         };
-        packages.plover = pkgs.python3Packages.callPackage ./plover.nix { inherit sources; };
         packages.default = self.packages.${system}.plover;
-        packages.plover-with-plugins = f: let
-          plover = self.packages.${system}.plover;
-          plugins = pkgs.python3Packages.callPackage ./plugins.nix { inherit plover sources; };
-        in
-          plover.overrideAttrs (old: {
-            propagatedBuildInputs = old.propagatedBuildInputs ++ (f plugins);
-          });
+        packages.plover = let
+          plover = pkgs.python3Packages.callPackage ./plover.nix { inherit sources; };
+          with-plugins =  f: let
+            plugins = pkgs.python3Packages.callPackage ./plugins.nix { inherit plover sources; };
+            in plover.overrideAttrs (old: {
+              propagatedBuildInputs = old.propagatedBuildInputs ++ (f plugins);
+            });
+          in plover // { inherit with-plugins; };
       }
     );
 }
