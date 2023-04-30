@@ -2,7 +2,7 @@
 
 ## Usage
 
-Add this flake to your flake inputs, e.g. `inputs.plover-flake.url = "github:dnaq/plover-plugins-flake";`
+Add this flake to your flake inputs, e.g. `inputs.plover-flake.url = "github:dnaq/plover-flake";`
 
 Then a plover derivation containing the plugins you want can be built with
 ```
