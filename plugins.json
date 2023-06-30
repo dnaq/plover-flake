@@ -391,9 +391,9 @@
   },
   {
     "name": "plover-spanish-mqd",
-    "filename": "plover_spanish_mqd-2.1.6.tar.gz",
-    "version": "2.1.6",
-    "sha256": "bad2503ddcc68cca4f56a5560f0768251e1427e359ba3526b8f660bcb6beaa87"
+    "filename": "plover_spanish_mqd-2.1.7.tar.gz",
+    "version": "2.1.7",
+    "sha256": "397b957656c266fd2338f2814dfa09a9733a289996888e5a26f9ee6972caa0dd"
   },
   {
     "name": "plover-spanish-system-eo-variant",
@@ -415,9 +415,9 @@
   },
   {
     "name": "plover-stenograph",
-    "filename": "plover-stenograph-2.0.4.tar.gz",
-    "version": "2.0.4",
-    "sha256": "5ec76793888ba2c247f87d8fe4a47bcc692ef39237652f452ef506c14b5494a6"
+    "filename": "plover-stenograph-2.1.tar.gz",
+    "version": "2.1",
+    "sha256": "5a2e821a487e03110766d927042686530c33ed33e6b9bd26d99591ee724eeb02"
   },
   {
     "name": "plover-stenograph-usb",
