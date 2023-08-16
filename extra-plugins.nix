@@ -1,21 +1,34 @@
-{ sources, lib, plover, hid, bitstring, buildPythonPackage, fetchFromGitHub }:
-{
+{ sources, lib, plover, hid, bitstring, dulwich, odfpy, pyparsing, buildPythonPackage, fetchPypi }:
+let
+  spylls = buildPythonPackage rec {
+    pname = "spylls";
+    version = "0.1.7";
+    src = fetchPypi {
+      inherit pname version;
+      sha256 = "sha256-cEWJLcvTJNNoX2nFp2AGPnj7g5kTckzhgHfPCgyT8iA=";
+    };
+    doCheck = false;
+  };
+in {
   plover_machine_hid = buildPythonPackage rec {
     pname = "plover-machine-hid";
-    version = "git";
+    version = "master";
     src = sources.plover-machine-hid;
     buildInputs = [ plover ];
     propagatedBuildInputs = [ hid bitstring ];
   };
   plover_auto_reconnect_machine = buildPythonPackage rec {
     pname = "plover_auto_reconnect_machine";
-    version = "84f8d74894f993e7ccac923242f27fe14317c7c6";
-    src = fetchFromGitHub {
-      owner = "tschulte";
-      repo = "plover_auto_reconnect_machine";
-      rev = "84f8d74894f993e7ccac923242f27fe14317c7c6";
-      sha256 = "sha256-osM/bVJeJmUxPqO9hhYy7fipu+Qg4Xq/qPe9l3JP5a8=";
-    };
+    version = "master";
+    src = sources.plover_auto_reconnect_machine;
     buildInputs = [ plover ];
+  };
+  plover2cat = buildPythonPackage rec {
+    pname = "plover2cat";
+    version = "master";
+    src = sources.plover2cat;
+    buildInputs = [ plover ];
+    propagatedBuildInputs = [ dulwich odfpy pyparsing spylls ];
+    doCheck = false;
   };
 }

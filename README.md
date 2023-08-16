@@ -32,7 +32,6 @@ the meantime it is possible to do the following:
 
 ## Current Issues
 
-Currently it is not possible in any decent way to replace the pyqt derivation
-used for building plover. This makes it hard to support plugins like
-plover2cat which require qtMultimedia, which is not enabled by default for pyqt5 in nixpkgs.
-If anyone figures out a good way to solve this, please let me know.
+In order to support plover2cat the pyqt derivation is overriden with `withMultimedia = true;`.
+This holds even if plover2cat isn't installed, which might entail a bit of a waste of disk space.
+If anyone figures out a good way for plugins to additively add qt features when dependen on, please let me know.
