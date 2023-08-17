@@ -20,11 +20,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1692100542,
-        "narHash": "sha256-H4f4BMl6cII32vg44RW8S/f0sel+6oJVsI1Eek9IwX4=",
+        "lastModified": 1692190437,
+        "narHash": "sha256-yJUZzmzSmDYb9ONPnMQDru66RjZgGQZRvj3tQebkexk=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "32e8028c1c6d16f8783fb226fe1ab5b5cd5603ed",
+        "rev": "9b2aa98db6b10503666a50f4eb93b2fc0d57bde5",
         "type": "github"
       },
       "original": {
@@ -85,11 +85,11 @@
     "plover2cat": {
       "flake": false,
       "locked": {
-        "lastModified": 1692133769,
-        "narHash": "sha256-pvcMmjWsfS9AEE5xqmAhX8pmwbPNLNbtj/qtdXmRkZk=",
+        "lastModified": 1692214876,
+        "narHash": "sha256-f2/s7c4Dy7+ZwvVt4aFHqr4fpyTDfQTBJTrFemVRDjI=",
         "owner": "greenwyrt",
         "repo": "plover2CAT",
-        "rev": "3c4c5ffe6843c73156a8533e508d7b479b8254dd",
+        "rev": "d2e07f03e484ff1057cefea39baa507487ec9760",
         "type": "github"
       },
       "original": {
