@@ -1,4 +1,18 @@
-{ sources, lib, plover, hid, bitstring, dulwich, odfpy, pyparsing, buildPythonPackage, fetchPypi }:
+{ sources
+, lib
+, plover
+, hid
+, bitstring
+, dulwich
+, odfpy
+, pyparsing
+, tomli
+, websocket-client
+, hatchling
+, buildPythonPackage
+, fetchPypi
+}:
+
 let
   spylls = buildPythonPackage rec {
     pname = "spylls";
@@ -8,6 +22,17 @@ let
       sha256 = "sha256-cEWJLcvTJNNoX2nFp2AGPnj7g5kTckzhgHfPCgyT8iA=";
     };
     doCheck = false;
+  };
+  obsws-python = buildPythonPackage rec {
+    format = "pyproject";
+    pname = "obsws_python";
+    version = "1.6.0";
+    src = fetchPypi {
+      inherit pname version;
+      sha256 = "sha256-YzmuxP1hrapSAIsihZ+BjnJHxdanTXjy8ZFKXQ7b1n4=";
+    };
+    buildInputs = [ hatchling ];
+    propagatedBuildInputs = [ tomli websocket-client ];
   };
 in {
   plover_machine_hid = buildPythonPackage rec {
@@ -28,7 +53,7 @@ in {
     version = "master";
     src = sources.plover2cat;
     buildInputs = [ plover ];
-    propagatedBuildInputs = [ dulwich odfpy pyparsing spylls ];
+    propagatedBuildInputs = [ dulwich odfpy pyparsing spylls obsws-python ];
     doCheck = false;
   };
 }
