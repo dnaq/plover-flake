@@ -2,7 +2,7 @@
 , lib
 , plover
 , hid
-, bitstring
+, bitarray
 , dulwich
 , odfpy
 , pyparsing
@@ -40,7 +40,7 @@ in {
     version = "master";
     src = sources.plover-machine-hid;
     buildInputs = [ plover ];
-    propagatedBuildInputs = [ hid bitstring ];
+    propagatedBuildInputs = [ hid bitarray ];
   };
   plover_auto_reconnect_machine = buildPythonPackage rec {
     pname = "plover_auto_reconnect_machine";

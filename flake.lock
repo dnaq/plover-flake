@@ -53,11 +53,11 @@
     "plover-machine-hid": {
       "flake": false,
       "locked": {
-        "lastModified": 1693130703,
-        "narHash": "sha256-UP7jDaP/NayQb9gcA8rU9ecOo4Ba5JMk9E4KLwERNfY=",
+        "lastModified": 1693153992,
+        "narHash": "sha256-2MQPLERSjX0i0GJaKMyb39beMhQytraWIDHiqX5fSOg=",
         "owner": "dnaq",
         "repo": "plover-machine-hid",
-        "rev": "257b5f455e5df6dd8304ae9b984b0f5b7924e79a",
+        "rev": "4924dfc1ddf542182cb5de6075a659f75f88b124",
         "type": "github"
       },
       "original": {
