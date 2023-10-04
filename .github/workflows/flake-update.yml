@@ -20,5 +20,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           nix flake update --commit-lock-file --commit-lockfile-summary "flake.lock: Update"
+      - name: Build flake
+        run: |
           nix build
+      - name: Push to main
+        run: |
           git push
