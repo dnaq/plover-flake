@@ -26,10 +26,10 @@ let
   obsws-python = buildPythonPackage rec {
     format = "pyproject";
     pname = "obsws_python";
-    version = "1.6.0";
+    version = "1.6.1";
     src = fetchPypi {
       inherit pname version;
-      sha256 = "sha256-YzmuxP1hrapSAIsihZ+BjnJHxdanTXjy8ZFKXQ7b1n4=";
+      sha256 = "sha256-n1l4M3xVfp+8pnO1rF3Ww7Vwyi6GCD3/QHLbrZOXp7w=";
     };
     buildInputs = [ hatchling ];
     propagatedBuildInputs = [ tomli websocket-client ];
