@@ -439,9 +439,9 @@
   },
   {
     "name": "plover-stenobee",
-    "filename": "plover-stenobee-0.6.32.tar.gz",
-    "version": "0.6.32",
-    "sha256": "184ed7ed5216dafd1451f8d83c604d18fc77cbbc61855a1dc1717938b02d43de"
+    "filename": "plover-stenobee-0.6.53.tar.gz",
+    "version": "0.6.53",
+    "sha256": "4a29322f20835e768c9fac807bc4709e2ba8e52ef48abdfe2bb2269806d410bd"
   },
   {
     "name": "plover-stenograph",
