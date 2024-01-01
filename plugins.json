@@ -73,9 +73,9 @@
   },
   {
     "name": "plover-controller",
-    "filename": "plover-controller-0.0.12.tar.gz",
-    "version": "0.0.12",
-    "sha256": "b10f537b174c07ef8a8e1dc1a0629bc7bee33232f84551ee96c12fa1ab29e01b"
+    "filename": "plover-controller-0.0.13.tar.gz",
+    "version": "0.0.13",
+    "sha256": "25aee04224dcc82c5f25aaa0ce59d6429932c551cc923e2774d8177fb716fe72"
   },
   {
     "name": "plover-current-time",
@@ -439,9 +439,9 @@
   },
   {
     "name": "plover-stenobee",
-    "filename": "plover-stenobee-0.7.8.tar.gz",
-    "version": "0.7.8",
-    "sha256": "98bbaf4b26f18b51fe599d033e804fb26227c5c60a5a9fa760050f0b4c2d9ef2"
+    "filename": "plover-stenobee-0.7.11.tar.gz",
+    "version": "0.7.11",
+    "sha256": "02060ecf51e44108f91b4c68dfd54c0463ae3f50acc0694affd188bcd3314fef"
   },
   {
     "name": "plover-stenograph",
