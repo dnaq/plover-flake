@@ -193,9 +193,9 @@
   },
   {
     "name": "plover-local-env-var",
-    "filename": "plover_local_env_var-0.1.2.tar.gz",
-    "version": "0.1.2",
-    "sha256": "73bbf7fb608d91e4b82d27abbddbb863afcd9a0efff1e7f1bfd53c09d1eb5cab"
+    "filename": "plover_local_env_var-0.2.5.tar.gz",
+    "version": "0.2.5",
+    "sha256": "4c2520435204ceaf2cc55a6a5883f3f0e606339bc7632d5555403ad5a32c1767"
   },
   {
     "name": "plover-maajik",
@@ -331,9 +331,9 @@
   },
   {
     "name": "plover-q-and-a",
-    "filename": "plover_q_and_a-0.3.4.tar.gz",
-    "version": "0.3.4",
-    "sha256": "03561cdb50e1a9ab4a6c33d7e30909076cf370b78917e7c991b9de9059cacc61"
+    "filename": "plover_q_and_a-0.3.5.tar.gz",
+    "version": "0.3.5",
+    "sha256": "2605d37833d56b6caebfa85971d061b5fac55c5ff79162003dbf23ace598ae8d"
   },
   {
     "name": "plover-regenpfeifer",
@@ -391,9 +391,9 @@
   },
   {
     "name": "plover-run-applescript",
-    "filename": "plover_run_applescript-0.2.3.tar.gz",
-    "version": "0.2.3",
-    "sha256": "b997dce2569fbf156210afc20d500e04f22ab6f4cc90ec43bc944da5a3bf98c0"
+    "filename": "plover_run_applescript-0.3.1.tar.gz",
+    "version": "0.3.1",
+    "sha256": "44fead9d786035efc3d6a6e7b6ead39f29dc35c6b0b83e21a38eefd52f7913cc"
   },
   {
     "name": "plover-run-shell",
