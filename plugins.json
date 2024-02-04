@@ -180,6 +180,12 @@
     "sha256": "33067bf39e532af8dee11d1b1660dcb643e8ca6cb267c63fc60eb1de72202397"
   },
   {
+    "name": "plover-lapwing-aio",
+    "filename": "plover-lapwing-aio-1.1.0.tar.gz",
+    "version": "1.1.0",
+    "sha256": "a2a704c60252311edb71e0dae94d7a99391c418b314fed769ca7fe21ea309de2"
+  },
+  {
     "name": "plover-last-translation",
     "filename": "plover_last_translation-0.0.2.tar.gz",
     "version": "0.0.2",
@@ -193,9 +199,9 @@
   },
   {
     "name": "plover-local-env-var",
-    "filename": "plover_local_env_var-0.2.6.tar.gz",
-    "version": "0.2.6",
-    "sha256": "d538774005c15e080e58d72487d8f848534e22766d316e70aa8840d243244429"
+    "filename": "plover_local_env_var-0.2.12.tar.gz",
+    "version": "0.2.12",
+    "sha256": "17aab57d7e30885b66bd44afdb3225c890b73202e68427dae88a388fde78db59"
   },
   {
     "name": "plover-maajik",
@@ -378,6 +384,12 @@
     "sha256": "14c8cd94781313d2e86cd6a964b07d7b094818be328807dc0ad858a46e5d7c2a"
   },
   {
+    "name": "plover-retro-untranslator",
+    "filename": "plover_retro_untranslator-0.3.0.tar.gz",
+    "version": "0.3.0",
+    "sha256": "b6140d7b0dcaad3c1f50ba13b1c362ebaf2090fb9ed690c72ae43a4a983d05c6"
+  },
+  {
     "name": "plover-roll-the-dice",
     "filename": "plover_roll_the_dice-0.1.0.tar.gz",
     "version": "0.1.0",
@@ -439,9 +451,9 @@
   },
   {
     "name": "plover-stenobee",
-    "filename": "plover-stenobee-0.7.11.tar.gz",
-    "version": "0.7.11",
-    "sha256": "02060ecf51e44108f91b4c68dfd54c0463ae3f50acc0694affd188bcd3314fef"
+    "filename": "plover-stenobee-0.7.14.tar.gz",
+    "version": "0.7.14",
+    "sha256": "f9813f811fdfb0824c4db69adcfcc1ec8accca90f7ba1650a07da78773971874"
   },
   {
     "name": "plover-stenograph",
