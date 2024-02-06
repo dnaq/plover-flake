@@ -11,9 +11,8 @@
   setuptools,
   wcwidth,
   xlib,
-  sources
-}:
-let
+  sources,
+}: let
   plover-stroke = buildPythonPackage rec {
     pname = "plover_stroke";
     version = "master";
@@ -24,29 +23,30 @@ let
     version = "master";
     src = sources.rtf-tokenize;
   };
-in qt5.mkDerivationWith buildPythonPackage rec {
-  pname = "plover";
-  version = "master";
-  src = sources.plover;
-  #checkInputs = [ pytest pytest-qt mock ];
-  propagatedBuildInputs = [
-    Babel
-    pyqt5
-    xlib
-    pyserial
-    appdirs
-    wcwidth
-    setuptools
-    certifi
-    #hid
-    plover-stroke
-    rtf-tokenize
-  ];
+in
+  qt5.mkDerivationWith buildPythonPackage rec {
+    pname = "plover";
+    version = "master";
+    src = sources.plover;
+    #checkInputs = [ pytest pytest-qt mock ];
+    propagatedBuildInputs = [
+      Babel
+      pyqt5
+      xlib
+      pyserial
+      appdirs
+      wcwidth
+      setuptools
+      certifi
+      #hid
+      plover-stroke
+      rtf-tokenize
+    ];
 
-  dontWrapQtApps = true;
-  preFixup = ''
-    makeWrapperArgs+=("''${qtWrapperArgs[@]}")
-  '';
+    dontWrapQtApps = true;
+    preFixup = ''
+      makeWrapperArgs+=("''${qtWrapperArgs[@]}")
+    '';
 
-  doCheck = false;
-}
+    doCheck = false;
+  }

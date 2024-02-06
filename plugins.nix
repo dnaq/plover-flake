@@ -1,12 +1,11 @@
-{ 
+{
   buildPythonPackage,
   callPackage,
   fetchPypi,
   lib,
   plover,
   sources,
-}:
-let
+}: let
   inherit (lib) extends;
   plugins = builtins.fromJSON (builtins.readFile ./plugins.json);
   makePloverPlugin = plugin: (buildPythonPackage rec {
@@ -16,16 +15,21 @@ let
       inherit pname version;
       sha256 = plugin.sha256;
     };
-    buildInputs = [ plover ];
+    buildInputs = [plover];
   });
-  pluginToAttr = p: { name = p.pname; value = p; };
+  pluginToAttr = p: {
+    name = p.pname;
+    value = p;
+  };
   basicPlugins = final: prev: builtins.listToAttrs (map (p: pluginToAttr (makePloverPlugin p)) plugins);
-  overrides = callPackage ./overrides.nix { };
+  overrides = callPackage ./overrides.nix {};
 
-  initialPackages = self: callPackage ./extra-plugins.nix { inherit plover sources; };
+  initialPackages = self: callPackage ./extra-plugins.nix {inherit plover sources;};
 
-  extensible-self = lib.makeExtensible
-    (extends overrides
+  extensible-self =
+    lib.makeExtensible
+    (
+      extends overrides
       (extends basicPlugins initialPackages)
     );
 in
