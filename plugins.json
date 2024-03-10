@@ -133,9 +133,9 @@
   },
   {
     "name": "plover-engine-server-2",
-    "filename": "plover_engine_server_2-0.0.8.tar.gz",
-    "version": "0.0.8",
-    "sha256": "48badd123ebd1d05ff53dba9e3bd0bf888c6e61dc9c20a4c51e1c0a3fe087bb2"
+    "filename": "plover_engine_server_2-0.1.1.tar.gz",
+    "version": "0.1.1",
+    "sha256": "244e2b975a10aa7817a1c1c10ed77b3e45e8fe8e5484160bf409839446e52e04"
   },
   {
     "name": "plover-excel-dictionary",
@@ -181,9 +181,9 @@
   },
   {
     "name": "plover-lapwing-aio",
-    "filename": "plover-lapwing-aio-1.1.6.tar.gz",
-    "version": "1.1.6",
-    "sha256": "c8dab35c65b8928db53a38c04f022e49319dbba687aec9527dc1cfabf14d84a7"
+    "filename": "plover-lapwing-aio-1.1.8.tar.gz",
+    "version": "1.1.8",
+    "sha256": "777d133c3697f3475c8d7f3290ac273955aaaa5d34faa63c49eef1a177ed2cac"
   },
   {
     "name": "plover-last-translation",
@@ -325,9 +325,9 @@
   },
   {
     "name": "plover-portuguese",
-    "filename": "plover_portuguese-0.2.1.tar.gz",
-    "version": "0.2.1",
-    "sha256": "1d4606d4328252867cfd4d04feb1191545a32f5788793b39ef3ce66a8f7bf4c5"
+    "filename": "plover_portuguese-0.2.2.tar.gz",
+    "version": "0.2.2",
+    "sha256": "b1fb09ae2b601d63c3f4f2ad69267c2d820839c07b93603012c19dd4130e9b8e"
   },
   {
     "name": "plover-python-dictionary",
@@ -343,9 +343,9 @@
   },
   {
     "name": "plover-regenpfeifer",
-    "filename": "plover_regenpfeifer-1.1.0.tar.gz",
-    "version": "1.1.0",
-    "sha256": "e0d7e008eb1b77573ae8728b38e810cbf5f5a41c459fe478f869ba41ee2889bd"
+    "filename": "plover_regenpfeifer-1.1.2.tar.gz",
+    "version": "1.1.2",
+    "sha256": "395b0fc8486c09c2ee54f57a25bb60a7127a109a0b136583b59d1fb04a7014a1"
   },
   {
     "name": "plover-retro-case",
