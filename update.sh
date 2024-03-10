@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
 jq '.[]' -r $PLUGINREGISTRY |
 while read -r plugin;
