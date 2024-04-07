@@ -85,15 +85,16 @@
     "plover-wl": {
       "flake": false,
       "locked": {
-        "lastModified": 1711643817,
-        "narHash": "sha256-yNcqk7cgC3NKciguUYf4K/Qy/DPm463uXMuFYQnSPDM=",
+        "lastModified": 1712484922,
+        "narHash": "sha256-btt7EpU41/kHilo9kDmrSAbtqU7MH/NQ75f2HvyYj6o=",
         "owner": "LilleAila",
         "repo": "plover",
-        "rev": "9b5a357f1fb57cb0a9a8596ae12cd1e84fcff6c4",
+        "rev": "b23cab0d8c5fe34e0ab16593701bc497bb0df18e",
         "type": "github"
       },
       "original": {
         "owner": "LilleAila",
+        "ref": "wayland-sway",
         "repo": "plover",
         "type": "github"
       }

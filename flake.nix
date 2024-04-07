@@ -10,7 +10,7 @@
     flake = false;
   };
   inputs.plover-wl = {
-    url = "github:LilleAila/plover";
+    url = "github:LilleAila/plover/wayland-sway";
     flake = false;
   };
   inputs.rtf-tokenize = {
