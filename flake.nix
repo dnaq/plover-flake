@@ -9,8 +9,8 @@
     url = "github:openstenoproject/plover";
     flake = false;
   };
-  inputs.plover-wl = {
-    url = "github:LilleAila/plover/wayland-sway";
+  inputs.plover-output-dotool = {
+    url = "github:halbGefressen/plover-output-dotool";
     flake = false;
   };
   inputs.rtf-tokenize = {
@@ -58,18 +58,6 @@
         packages.plover = let
           pyqt5 = pkgs.python3Packages.pyqt5.override {withMultimedia = true;};
           plover = pkgs.python3Packages.callPackage ./plover.nix {inherit sources pyqt5;};
-          with-plugins = f: let
-            plugins = pkgs.python3Packages.callPackage ./plugins.nix {inherit plover sources;};
-          in
-            plover.overrideAttrs (old: {
-              propagatedBuildInputs = old.propagatedBuildInputs ++ (f plugins);
-            });
-        in
-          plover // {inherit with-plugins;};
-
-        packages.plover-wl = let
-          pyqt5 = pkgs.python3Packages.pyqt5.override {withMultimedia = true;};
-          plover = pkgs.python3Packages.callPackage ./plover-wl.nix {inherit sources pyqt5;};
           with-plugins = f: let
             plugins = pkgs.python3Packages.callPackage ./plugins.nix {inherit plover sources;};
           in

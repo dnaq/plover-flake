@@ -55,4 +55,10 @@ in {
     propagatedBuildInputs = [dulwich odfpy pyparsing spylls obsws-python];
     doCheck = false;
   };
+  plover_output_dotool = buildPythonPackage rec {
+    pname = "plover-output-dotool";
+    version = "master";
+    src = sources.plover-output-dotool;
+    buildInputs = [plover];
+  };
 }

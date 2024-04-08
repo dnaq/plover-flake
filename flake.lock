@@ -66,6 +66,22 @@
         "type": "github"
       }
     },
+    "plover-output-dotool": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1710166366,
+        "narHash": "sha256-Fl4/MmXS3NZqgR1E/vl8iJizSeRyhDLH4bhLy92upqY=",
+        "owner": "halbGefressen",
+        "repo": "plover-output-dotool",
+        "rev": "25e7df1a116672163256ccef85cfd91f7e76b9cf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "halbGefressen",
+        "repo": "plover-output-dotool",
+        "type": "github"
+      }
+    },
     "plover-stroke": {
       "flake": false,
       "locked": {
@@ -79,23 +95,6 @@
       "original": {
         "owner": "openstenoproject",
         "repo": "plover_stroke",
-        "type": "github"
-      }
-    },
-    "plover-wl": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1712484922,
-        "narHash": "sha256-btt7EpU41/kHilo9kDmrSAbtqU7MH/NQ75f2HvyYj6o=",
-        "owner": "LilleAila",
-        "repo": "plover",
-        "rev": "b23cab0d8c5fe34e0ab16593701bc497bb0df18e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "LilleAila",
-        "ref": "wayland-sway",
-        "repo": "plover",
         "type": "github"
       }
     },
@@ -153,8 +152,8 @@
         "nixpkgs": "nixpkgs",
         "plover": "plover",
         "plover-machine-hid": "plover-machine-hid",
+        "plover-output-dotool": "plover-output-dotool",
         "plover-stroke": "plover-stroke",
-        "plover-wl": "plover-wl",
         "plover2cat": "plover2cat",
         "plover_auto_reconnect_machine": "plover_auto_reconnect_machine",
         "plover_plugins_registry": "plover_plugins_registry",
