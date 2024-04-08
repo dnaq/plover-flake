@@ -69,15 +69,15 @@
     "plover-output-dotool": {
       "flake": false,
       "locked": {
-        "lastModified": 1710166366,
-        "narHash": "sha256-Fl4/MmXS3NZqgR1E/vl8iJizSeRyhDLH4bhLy92upqY=",
-        "owner": "halbGefressen",
+        "lastModified": 1712588815,
+        "narHash": "sha256-7jO+a5gRzr1L0za9HTh8KwNUy5ZtE5IGyBOpN5CixBc=",
+        "owner": "LilleAila",
         "repo": "plover-output-dotool",
-        "rev": "25e7df1a116672163256ccef85cfd91f7e76b9cf",
+        "rev": "17c9b4697d65b0f7bd8cdc35b1f3e7979f3206db",
         "type": "github"
       },
       "original": {
-        "owner": "halbGefressen",
+        "owner": "LilleAila",
         "repo": "plover-output-dotool",
         "type": "github"
       }

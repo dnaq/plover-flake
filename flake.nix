@@ -10,7 +10,7 @@
     flake = false;
   };
   inputs.plover-output-dotool = {
-    url = "github:halbGefressen/plover-output-dotool";
+    url = "github:LilleAila/plover-output-dotool";
     flake = false;
   };
   inputs.rtf-tokenize = {
