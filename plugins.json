@@ -73,9 +73,9 @@
   },
   {
     "name": "plover-controller",
-    "filename": "plover-controller-0.0.14.tar.gz",
-    "version": "0.0.14",
-    "sha256": "527097d454ff8a75d573e30068403f3e79343f7874cda6017ceec801ec7452d1"
+    "filename": "plover-controller-0.0.15.tar.gz",
+    "version": "0.0.15",
+    "sha256": "184a3df625b8a607d1714bce79f925da1c5d4ae8088a6a3751888878283ba29e"
   },
   {
     "name": "plover-current-time",
