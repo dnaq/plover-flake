@@ -12,6 +12,8 @@
   hatchling,
   buildPythonPackage,
   fetchPypi,
+  evdev,
+  xkbcommon,
 }: let
   spylls = buildPythonPackage rec {
     pname = "spylls";
@@ -64,4 +66,11 @@ in {
     src = sources.plover-output-dotool;
     buildInputs = [plover];
   };
+  plover_uinput = buildPythonPackage rec {
+    pname = "plover-uinput";
+    version = "master";
+    src = sources.plover-uinput;
+    buildInputs = [plover];
+    propagatedBuildInputs = [evdev, xkbcommon];
+  }
 }

@@ -13,6 +13,10 @@
     url = "github:LilleAila/plover-output-dotool";
     flake = false;
   };
+  inputs.plover-uinput = {
+    url = "github:LilleAila/plover-uinput";
+    flake = false;
+  };
   inputs.rtf-tokenize = {
     url = "github:openstenoproject/rtf_tokenize";
     flake = false;
