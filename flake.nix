@@ -43,10 +43,9 @@
       in {
         devShells.default = pkgs.mkShell {
           PLUGINREGISTRY = "${sources.plover_plugins_registry}/registry.json";
-          packages = with pkgs;
-          with python3Packages; [
+          packages = with pkgs; [
             curl
-            ipython
+            python3Packages.ipython
             jq
           ];
         };
