@@ -385,9 +385,9 @@
   },
   {
     "name": "plover-retro-untranslator",
-    "filename": "plover_retro_untranslator-0.3.0.tar.gz",
-    "version": "0.3.0",
-    "sha256": "b6140d7b0dcaad3c1f50ba13b1c362ebaf2090fb9ed690c72ae43a4a983d05c6"
+    "filename": "plover_retro_untranslator-0.4.0.tar.gz",
+    "version": "0.4.0",
+    "sha256": "ecfbfb016d74322bcc873c6562b905e58c6ee65646f1f0393c98a5e1bdef4d06"
   },
   {
     "name": "plover-roll-the-dice",
