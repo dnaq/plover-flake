@@ -181,9 +181,9 @@
   },
   {
     "name": "plover-lapwing-aio",
-    "filename": "plover_lapwing_aio-1.1.11.tar.gz",
-    "version": "1.1.11",
-    "sha256": "b00288fa36aa8b9e0c992187064795051d886cc9c2b7dd276c8d168f01a6885b"
+    "filename": "plover_lapwing_aio-1.1.12.tar.gz",
+    "version": "1.1.12",
+    "sha256": "fc9ca6475de4c29afbb3292ad6f8b38365aa734839e6b18063b866b6e23659ea"
   },
   {
     "name": "plover-last-translation",
