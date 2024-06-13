@@ -85,11 +85,11 @@
     "plover2cat": {
       "flake": false,
       "locked": {
-        "lastModified": 1712822823,
-        "narHash": "sha256-4aTyNO32Z4YJUSYHD2xOAVcBBYS6o7BffEjSxAowL4s=",
+        "lastModified": 1718217592,
+        "narHash": "sha256-fyPOxEmBf4my+/QUSDR598shwThNUFus8vlK1FsBycQ=",
         "owner": "greenwyrt",
         "repo": "plover2CAT",
-        "rev": "fb6855a47bbcd4537a97fdd7501afae2f38561da",
+        "rev": "3540497de5646d808e4fef25d808ca3951e96908",
         "type": "github"
       },
       "original": {
