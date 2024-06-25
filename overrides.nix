@@ -16,4 +16,13 @@ self: super: {
   plover_dict_commands = super.plover_dict_commands.overrideAttrs (old: {
     propagatedBuildInputs = [ setuptools-scm ];
   });
+  plover_lapwing_aio = super.plover_lapwing_aio.overrideAttrs (old: {
+    propagatedBuildInputs = [
+      super.plover_stitching
+      super.plover_python_dictionary
+      super.plover-modal-dictionary
+      super.plover_last_translation
+      self.plover_dict_commands
+    ];
+  });
 }
