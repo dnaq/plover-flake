@@ -45,16 +45,16 @@
           PLUGINREGISTRY = "${sources.plover_plugins_registry}/registry.json";
           packages = with pkgs; [
             curl
-            python3Packages.ipython
+            python311Packages.ipython
             jq
           ];
         };
         packages.default = self.packages.${system}.plover;
         packages.plover = let
-          pyqt5 = pkgs.python3Packages.pyqt5.override {withMultimedia = true;};
-          plover = pkgs.python3Packages.callPackage ./plover.nix {inherit sources pyqt5;};
+          pyqt5 = pkgs.python311Packages.pyqt5.override {withMultimedia = true;};
+          plover = pkgs.python311Packages.callPackage ./plover.nix {inherit sources pyqt5;};
           with-plugins = f: let
-            plugins = pkgs.python3Packages.callPackage ./plugins.nix {inherit plover sources;};
+            plugins = pkgs.python311Packages.callPackage ./plugins.nix {inherit plover sources;};
           in
             plover.overrideAttrs (old: {
               propagatedBuildInputs = old.propagatedBuildInputs ++ (f plugins);
