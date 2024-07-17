@@ -192,12 +192,6 @@
     "sha256": "9668236eec1da99f1e794e26fddd5a905c308f90a696211a2e65c4280b9b8dd9"
   },
   {
-    "name": "plover-layout-display",
-    "filename": "plover_layout_display-0.1.2.tar.gz",
-    "version": "0.1.2",
-    "sha256": "90ba7cafd71ec306811c8afe79174840304b5ecbca80c957f2b1a85b48f41f02"
-  },
-  {
     "name": "plover-local-env-var",
     "filename": "plover_local_env_var-0.2.14.tar.gz",
     "version": "0.2.14",
@@ -460,12 +454,6 @@
     "filename": "plover-stenograph-2.1.tar.gz",
     "version": "2.1",
     "sha256": "5a2e821a487e03110766d927042686530c33ed33e6b9bd26d99591ee724eeb02"
-  },
-  {
-    "name": "plover-stenograph-usb",
-    "filename": "plover_stenograph_usb-1.2.1.tar.gz",
-    "version": "1.2.1",
-    "sha256": "1fa21fe1af312bcb64eda8eb9c4d6f1fe2793bbaefcba2df655d635043415d9b"
   },
   {
     "name": "plover-stenohid-test",
