@@ -510,10 +510,10 @@
     "sha256": "63413fa2585dbb478c9ad09e130645947e718b5e30c7690612648761b54ce746"
   },
   {
-    "name": "plover-uinput-output",
-    "filename": "plover-uinput-output-0.0.1.tar.gz",
-    "version": "0.0.1",
-    "sha256": "ca794a6e2d5022b5109a91ac7b852dc8db35bf2e9ac08da6adbc628b937b5064"
+    "name": "plover-uinput",
+    "filename": "plover_uinput-0.0.13.tar.gz",
+    "version": "0.0.13",
+    "sha256": "6b48bccc24eb4b5eba19c374dda1df17c3afe87bb94091b810a0c8a6dfe42fbe"
   },
   {
     "name": "plover-unused-xtest-output",
