@@ -21,10 +21,6 @@
     url = "github:dnaq/plover-machine-hid";
     flake = false;
   };
-  inputs.plover_auto_reconnect_machine = {
-    url = "github:tschulte/plover_auto_reconnect_machine";
-    flake = false;
-  };
   inputs.plover2cat = {
     url = "github:greenwyrt/plover2CAT";
     flake = false;
