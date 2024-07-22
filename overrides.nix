@@ -8,20 +8,8 @@
   evdev,
   xkbcommon,
   buildPythonPackage,
-  fetchPypi
-}: self: super:
-let
-  simplefuzzyset = buildPythonPackage rec {
-    pname = "simplefuzzyset";
-    version = "0.0.12";
-
-    src = fetchPypi {
-      inherit pname version;
-      hash = "sha256-mhsww4tq+3bGYAvdZsHB3D2FBbCC6ePUZvYPQOi34fI=";
-    };
-  };
-in
-{
+  fetchPypi,
+}: self: super: {
   plover-yaml-dictionary = super.plover-yaml-dictionary.overrideAttrs (old: {
     propagatedBuildInputs = [ruamel-yaml];
   });
@@ -50,9 +38,20 @@ in
       self.plover-dict-commands
     ];
   });
-  plover-emoji = super.plover-emoji.overrideAttrs (old: {
-    propagatedBuildInputs = [
-      simplefuzzyset
-    ];
-  });
+  plover-emoji = let
+    simplefuzzyset = buildPythonPackage rec {
+      pname = "simplefuzzyset";
+      version = "0.0.12";
+
+      src = fetchPypi {
+        inherit pname version;
+        hash = "sha256-mhsww4tq+3bGYAvdZsHB3D2FBbCC6ePUZvYPQOi34fI=";
+      };
+    };
+  in
+    super.plover-emoji.overrideAttrs (old: {
+      propagatedBuildInputs = [
+        simplefuzzyset
+      ];
+    });
 }
