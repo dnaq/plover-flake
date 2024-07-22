@@ -1,6 +1,5 @@
 {
   sources,
-  lib,
   plover,
   hid,
   bitarray,
@@ -34,18 +33,12 @@
     propagatedBuildInputs = [tomli websocket-client];
   };
 in {
-  plover_machine_hid = buildPythonPackage rec {
+  plover-machine-hid = buildPythonPackage rec {
     pname = "plover-machine-hid";
     version = "master";
     src = sources.plover-machine-hid;
     buildInputs = [plover];
     propagatedBuildInputs = [hid bitarray];
-  };
-  plover_auto_reconnect_machine = buildPythonPackage rec {
-    pname = "plover_auto_reconnect_machine";
-    version = "master";
-    src = sources.plover_auto_reconnect_machine;
-    buildInputs = [plover];
   };
   plover2cat = buildPythonPackage rec {
     pname = "plover2cat";
