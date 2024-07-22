@@ -1,9 +1,9 @@
-{ ruamel-yaml, prompt-toolkit, pysdl2, setuptools-scm, utils }:
+{ ruamel-yaml, prompt-toolkit, pysdl2, setuptools-scm, utils, evdev, xkbcommon }:
 self: super: {
-  plover_yaml_dictionary = super.plover_yaml_dictionary.overrideAttrs (old: {
+  plover-yaml-dictionary = super.plover-yaml-dictionary.overrideAttrs (old: {
     propagatedBuildInputs = [ ruamel-yaml ];
   });
-  plover_console_ui = super.plover_console_ui.overrideAttrs (old: {
+  plover-console-ui = super.plover-console-ui.overrideAttrs (old: {
     propagatedBuildInputs = [ prompt-toolkit ];
     doCheck = false;
     doInstallCheck = false;
@@ -13,16 +13,19 @@ self: super: {
     doCheck = false;
     doInstallCheck = false;
   });
-  plover_dict_commands = super.plover_dict_commands.overrideAttrs (old: {
+  plover-dict-commands = super.plover-dict-commands.overrideAttrs (old: {
     propagatedBuildInputs = [ setuptools-scm ];
   });
-  plover_lapwing_aio = super.plover_lapwing_aio.overrideAttrs (old: {
+  plover-uinput = super.plover-uinput.overrideAttrs (old: {
+    propagatedBuildInputs = [ evdev xkbcommon ];
+  });
+  plover-lapwing-aio = super.plover-lapwing-aio.overrideAttrs (old: {
     propagatedBuildInputs = [
-      self.plover_stitching
-      self.plover_python_dictionary
+      self.plover-stitching
+      self.plover-python-dictionary
       self.plover-modal-dictionary
-      self.plover_last_translation
-      self.plover_dict_commands
+      self.plover-last-translation
+      self.plover-dict-commands
     ];
   });
 }

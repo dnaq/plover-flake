@@ -9,10 +9,11 @@
   inherit (lib) extends;
   plugins = builtins.fromJSON (builtins.readFile ./plugins.json);
   makePloverPlugin = plugin: (buildPythonPackage rec {
-    pname = lib.lists.head (builtins.split "-[0-9]" plugin.filename);
+    pname = plugin.name;
     version = plugin.version;
     src = fetchPypi {
-      inherit pname version;
+      inherit version;
+      pname = lib.lists.head (builtins.split "-[0-9]" plugin.filename);
       sha256 = plugin.sha256;
     };
     buildInputs = [plover];
