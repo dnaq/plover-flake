@@ -9,33 +9,33 @@
   xkbcommon,
   buildPythonPackage,
   fetchPypi,
-}: self: super: {
-  plover-yaml-dictionary = super.plover-yaml-dictionary.overrideAttrs (old: {
+}: final: prev: {
+  plover-yaml-dictionary = prev.plover-yaml-dictionary.overrideAttrs (old: {
     propagatedBuildInputs = [ruamel-yaml];
   });
-  plover-console-ui = super.plover-console-ui.overrideAttrs (old: {
+  plover-console-ui = prev.plover-console-ui.overrideAttrs (old: {
     propagatedBuildInputs = [prompt-toolkit];
     doCheck = false;
     doInstallCheck = false;
   });
-  plover-controller = super.plover-controller.overrideAttrs (old: {
+  plover-controller = prev.plover-controller.overrideAttrs (old: {
     propagatedBuildInputs = [pysdl2];
     doCheck = false;
     doInstallCheck = false;
   });
-  plover-dict-commands = super.plover-dict-commands.overrideAttrs (old: {
+  plover-dict-commands = prev.plover-dict-commands.overrideAttrs (old: {
     propagatedBuildInputs = [setuptools-scm];
   });
-  plover-uinput = super.plover-uinput.overrideAttrs (old: {
+  plover-uinput = prev.plover-uinput.overrideAttrs (old: {
     propagatedBuildInputs = [evdev xkbcommon];
   });
-  plover-lapwing-aio = super.plover-lapwing-aio.overrideAttrs (old: {
+  plover-lapwing-aio = prev.plover-lapwing-aio.overrideAttrs (old: {
     propagatedBuildInputs = [
-      self.plover-stitching
-      self.plover-python-dictionary
-      self.plover-modal-dictionary
-      self.plover-last-translation
-      self.plover-dict-commands
+      final.plover-stitching
+      final.plover-python-dictionary
+      final.plover-modal-dictionary
+      final.plover-last-translation
+      final.plover-dict-commands
     ];
   });
   plover-emoji = let
@@ -49,7 +49,7 @@
       };
     };
   in
-    super.plover-emoji.overrideAttrs (old: {
+    prev.plover-emoji.overrideAttrs (old: {
       propagatedBuildInputs = [
         simplefuzzyset
       ];
