@@ -181,9 +181,9 @@
   },
   {
     "name": "plover-lapwing-aio",
-    "filename": "plover_lapwing_aio-1.1.21.tar.gz",
-    "version": "1.1.21",
-    "sha256": "a0eb4d2f0a6e1b882c3af4b20e1d97a9129c6a5897a23642504c4e86d6c44645"
+    "filename": "plover_lapwing_aio-1.1.22.tar.gz",
+    "version": "1.1.22",
+    "sha256": "609a49db4bfe78b4e72ab99b6cafd979cc9781c21ac2856a80fce33367d8a891"
   },
   {
     "name": "plover-last-translation",
@@ -397,9 +397,9 @@
   },
   {
     "name": "plover-run-applescript",
-    "filename": "plover_run_applescript-0.3.6.tar.gz",
-    "version": "0.3.6",
-    "sha256": "1df2eefd10392aaf8026178e72bf92b18a90ac2d27e06c3d63b50e96692f187b"
+    "filename": "plover_run_applescript-0.3.7.tar.gz",
+    "version": "0.3.7",
+    "sha256": "b725252ffbbb134a3c8cd9370e0873d4d1381d6447b7ec70720346801fe8a349"
   },
   {
     "name": "plover-run-shell",
