@@ -193,9 +193,9 @@
   },
   {
     "name": "plover-local-env-var",
-    "filename": "plover_local_env_var-0.2.16.tar.gz",
-    "version": "0.2.16",
-    "sha256": "285410d3a10ce7ca7f587986e40920b142dd1e5f561e111ad18f17749fc7d894"
+    "filename": "plover_local_env_var-0.3.0.tar.gz",
+    "version": "0.3.0",
+    "sha256": "2ce8a7e97ead0b969ba122a094076739b3b4a66e263f12bdd2bdd5e8c9bfa342"
   },
   {
     "name": "plover-maajik",
