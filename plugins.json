@@ -193,9 +193,9 @@
   },
   {
     "name": "plover-local-env-var",
-    "filename": "plover_local_env_var-0.3.0.tar.gz",
-    "version": "0.3.0",
-    "sha256": "2ce8a7e97ead0b969ba122a094076739b3b4a66e263f12bdd2bdd5e8c9bfa342"
+    "filename": "plover_local_env_var-0.3.1.tar.gz",
+    "version": "0.3.1",
+    "sha256": "53109815d82fc1517f3fababbb912d609d7507f5d700461b8783b678ad798fdd"
   },
   {
     "name": "plover-maajik",
@@ -445,9 +445,9 @@
   },
   {
     "name": "plover-stenobee",
-    "filename": "plover-stenobee-0.7.14.tar.gz",
-    "version": "0.7.14",
-    "sha256": "f9813f811fdfb0824c4db69adcfcc1ec8accca90f7ba1650a07da78773971874"
+    "filename": "plover_stenobee-0.8.1.tar.gz",
+    "version": "0.8.1",
+    "sha256": "2c0ac1987e4c137c591d352bb3f96d93809ed59f36e829e8a3a80e3aa9c47a66"
   },
   {
     "name": "plover-stenograph",
