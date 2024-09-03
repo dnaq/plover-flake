@@ -331,9 +331,9 @@
   },
   {
     "name": "plover-q-and-a",
-    "filename": "plover_q_and_a-0.3.11.tar.gz",
-    "version": "0.3.11",
-    "sha256": "c13a0479c5a9ce242d33381f7a6b9775d0ede66302e24738d97ff4b42a37df97"
+    "filename": "plover_q_and_a-0.3.12.tar.gz",
+    "version": "0.3.12",
+    "sha256": "b794d52aac8e695f6486708ab5ca6a93be9e0407e5462a287dd2751803aa548d"
   },
   {
     "name": "plover-regenpfeifer",
@@ -445,9 +445,9 @@
   },
   {
     "name": "plover-stenobee",
-    "filename": "plover_stenobee-0.8.11.tar.gz",
-    "version": "0.8.11",
-    "sha256": "220b8a46f78d83269b143192eb1e51fa01fbd249fa84f2ff21eced6b7b9def59"
+    "filename": "plover_stenobee-0.8.13.tar.gz",
+    "version": "0.8.13",
+    "sha256": "b4423394230744c5d6d264d5b4d70b1cd0244fd3d1f7ade900d32277d5bdf6e1"
   },
   {
     "name": "plover-stenograph",
