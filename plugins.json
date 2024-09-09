@@ -181,9 +181,9 @@
   },
   {
     "name": "plover-lapwing-aio",
-    "filename": "plover_lapwing_aio-1.2.1.tar.gz",
-    "version": "1.2.1",
-    "sha256": "6072c2c68f4354f698c64255968932120078dce1bc30a6f8c24831ab7d0f494c"
+    "filename": "plover_lapwing_aio-1.2.2.tar.gz",
+    "version": "1.2.2",
+    "sha256": "922617a929af7fbfa6563d0151a9b8f668ece2c565bc9b2e870d7d0065069f4d"
   },
   {
     "name": "plover-last-translation",
@@ -331,9 +331,9 @@
   },
   {
     "name": "plover-q-and-a",
-    "filename": "plover_q_and_a-0.3.13.tar.gz",
-    "version": "0.3.13",
-    "sha256": "ecd29535ee86e7c94115b22f08b89e020596a7c886594a25073109ed4f2d5ba1"
+    "filename": "plover_q_and_a-0.4.0.tar.gz",
+    "version": "0.4.0",
+    "sha256": "731bba378404b039596b340f8bb0bf7164e3e668ef738bc02439e345e7f2bc5a"
   },
   {
     "name": "plover-regenpfeifer",
