@@ -133,9 +133,9 @@
   },
   {
     "name": "plover-engine-server-2",
-    "filename": "plover_engine_server_2-0.1.1.tar.gz",
-    "version": "0.1.1",
-    "sha256": "244e2b975a10aa7817a1c1c10ed77b3e45e8fe8e5484160bf409839446e52e04"
+    "filename": "plover_engine_server_2-0.1.2.tar.gz",
+    "version": "0.1.2",
+    "sha256": "1c033c045d084d0be84dcefe4929866a359b2b9fc74e9977e6ad1e0f40edb095"
   },
   {
     "name": "plover-excel-dictionary",
