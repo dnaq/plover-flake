@@ -43,9 +43,9 @@
   },
   {
     "name": "plover-clippy-2",
-    "filename": "plover_clippy_2-0.0.5.tar.gz",
-    "version": "0.0.5",
-    "sha256": "f34cc8704526f87fd0416aa356c8c1217060d9362c7307fc1df770ed43400e73"
+    "filename": "plover_clippy_2-0.0.8.tar.gz",
+    "version": "0.0.8",
+    "sha256": "bc89fda362f66bf972ddda35d78f5b775ace15e2a0f87cdc8405fda1bfc9ebfe"
   },
   {
     "name": "plover-clr-trans-state",
@@ -181,9 +181,9 @@
   },
   {
     "name": "plover-lapwing-aio",
-    "filename": "plover_lapwing_aio-1.2.2.tar.gz",
-    "version": "1.2.2",
-    "sha256": "922617a929af7fbfa6563d0151a9b8f668ece2c565bc9b2e870d7d0065069f4d"
+    "filename": "plover_lapwing_aio-1.2.3.tar.gz",
+    "version": "1.2.3",
+    "sha256": "a40619f20e303dabfc8ec92b520f3109206bb7bc796c6e23bfa439f59914eb55"
   },
   {
     "name": "plover-last-translation",
