@@ -397,9 +397,9 @@
   },
   {
     "name": "plover-run-applescript",
-    "filename": "plover_run_applescript-0.3.9.tar.gz",
-    "version": "0.3.9",
-    "sha256": "847f71ab795683a134d1fea12d666ad77e31bff86fcfd90473867d9954bbc41e"
+    "filename": "plover_run_applescript-0.3.10.tar.gz",
+    "version": "0.3.10",
+    "sha256": "d9cdba9df27cf1c3ab9be59a107bf8c1131b0f3bb9ca8fb30ae009888bf81c3a"
   },
   {
     "name": "plover-run-shell",
