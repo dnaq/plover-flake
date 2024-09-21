@@ -193,9 +193,9 @@
   },
   {
     "name": "plover-local-env-var",
-    "filename": "plover_local_env_var-0.3.2.tar.gz",
-    "version": "0.3.2",
-    "sha256": "e7b4dae4e93a91a18740def343031f2a4f156c3cc0118171c3d3ffc302430359"
+    "filename": "plover_local_env_var-0.3.3.tar.gz",
+    "version": "0.3.3",
+    "sha256": "b2aa01ce61a966a6481753d833a2d7ec4207d07b8f1b1952c166a73697139665"
   },
   {
     "name": "plover-maajik",
@@ -331,9 +331,9 @@
   },
   {
     "name": "plover-q-and-a",
-    "filename": "plover_q_and_a-0.4.0.tar.gz",
-    "version": "0.4.0",
-    "sha256": "731bba378404b039596b340f8bb0bf7164e3e668ef738bc02439e345e7f2bc5a"
+    "filename": "plover_q_and_a-0.4.1.tar.gz",
+    "version": "0.4.1",
+    "sha256": "4fb6f46b0c3b2376f1467295adbc1748f5548fbdba334dc07cc03ad8950d5fa1"
   },
   {
     "name": "plover-regenpfeifer",
