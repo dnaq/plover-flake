@@ -6,6 +6,12 @@
     "sha256": "ff3666480c0fbce0706aa283d13cc66167f11d04b9c3a1e1ca1e5642846a03b8"
   },
   {
+    "name": "plover-1password",
+    "filename": "plover_1password-0.3.13.tar.gz",
+    "version": "0.3.13",
+    "sha256": "1395e98010cac843cdd877d1cbe2b72eb25b4769a928b0f16bcc4235871ba9c1"
+  },
+  {
     "name": "plover-auto-identifier",
     "filename": "plover_auto_identifier-0.1.2.tar.gz",
     "version": "0.1.2",
@@ -82,6 +88,12 @@
     "filename": "plover_current_time-1.0.1.tar.gz",
     "version": "1.0.1",
     "sha256": "8e44791749428f4296a2cc6b9ea8ee178756580e761d2d747d6afc8b0f3f96d9"
+  },
+  {
+    "name": "plover-cycle-translations",
+    "filename": "plover_cycle_translations-0.2.10.tar.gz",
+    "version": "0.2.10",
+    "sha256": "61d0da2aa8494758ed4e067edc9993c9a208607cc42b457754b21ebfdb3453cb"
   },
   {
     "name": "plover-debugging-console",
@@ -312,6 +324,12 @@
     "sha256": "0c65e0ec29143be8fbcc26f76b604cc50265471f3a674aadb177a8b8158d13c4"
   },
   {
+    "name": "plover-platform-specific-translation",
+    "filename": "plover_platform_specific_translation-0.2.8.tar.gz",
+    "version": "0.2.8",
+    "sha256": "825776824a9462b6d775b0ff40ef02082f59bff16b13f1365ee7deaf9e23a34f"
+  },
+  {
     "name": "plover-plugins-manager",
     "filename": "plover_plugins_manager-0.7.1.tar.gz",
     "version": "0.7.1",
@@ -397,9 +415,9 @@
   },
   {
     "name": "plover-run-applescript",
-    "filename": "plover_run_applescript-0.3.10.tar.gz",
-    "version": "0.3.10",
-    "sha256": "d9cdba9df27cf1c3ab9be59a107bf8c1131b0f3bb9ca8fb30ae009888bf81c3a"
+    "filename": "plover_run_applescript-0.3.11.tar.gz",
+    "version": "0.3.11",
+    "sha256": "5fc963c482b2f3170e6b2b41122444e26e7f23f5c1d67dd0950b023242127662"
   },
   {
     "name": "plover-run-shell",
@@ -418,6 +436,12 @@
     "filename": "plover-search-translation-0.6.0.tar.gz",
     "version": "0.6.0",
     "sha256": "4520dcbccbd9540ba963025893bc1b1c123109e8de1de4c2ac89715a38e7e28f"
+  },
+  {
+    "name": "plover-sound",
+    "filename": "plover-sound-0.0.4.tar.gz",
+    "version": "0.0.4",
+    "sha256": "6559f9e1e9e60bca2ec4c4d11de355b9d1d2654a54b0308ca5411042e9d58d2e"
   },
   {
     "name": "plover-spanish-mqd",
@@ -442,6 +466,12 @@
     "filename": "plover_startup_py-0.2.0.tar.gz",
     "version": "0.2.0",
     "sha256": "61dc4d853c2f127d426e1cc3a893ffd9884a26d249ccb4bdd137998168fad635"
+  },
+  {
+    "name": "plover-steno-engine-hooks-logger",
+    "filename": "plover_steno_engine_hooks_logger-0.3.5.tar.gz",
+    "version": "0.3.5",
+    "sha256": "3ca6b66133765689952a13268f3078da56c3c37ec7035f74bd7d7a0e47835ddd"
   },
   {
     "name": "plover-stenobee",
