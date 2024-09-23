@@ -101,11 +101,11 @@
     "plover_plugins_registry": {
       "flake": false,
       "locked": {
-        "lastModified": 1721506796,
-        "narHash": "sha256-XMCUXl1koOt/PRB4xyEBOc5ycp00PSI4kjk40dGJsik=",
+        "lastModified": 1726979679,
+        "narHash": "sha256-WBP9Vvz78nfsDtZidQ/VVFnlvhDmqEfDNczWYTEGve8=",
         "owner": "openstenoproject",
         "repo": "plover_plugins_registry",
-        "rev": "9cee587b4a5ab9f7fc10f612bc142b1a90b9cb01",
+        "rev": "ce097ecbca8008a41dfcbf4a7611c16db63870d1",
         "type": "github"
       },
       "original": {
