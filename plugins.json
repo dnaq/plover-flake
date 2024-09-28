@@ -7,9 +7,9 @@
   },
   {
     "name": "plover-1password",
-    "filename": "plover_1password-0.3.16.tar.gz",
-    "version": "0.3.16",
-    "sha256": "e05fd580498dc9c3bb1ef139956b7a2bfb99516d10f0055301d1affb7ba9241e"
+    "filename": "plover_1password-0.3.17.tar.gz",
+    "version": "0.3.17",
+    "sha256": "ae990b840960c8d8de7f4ab389a9a3c5d02bad85f5ee7e79c835738223030a2c"
   },
   {
     "name": "plover-auto-identifier",
