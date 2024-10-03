@@ -91,9 +91,9 @@
   },
   {
     "name": "plover-cycle-translations",
-    "filename": "plover_cycle_translations-0.3.0.tar.gz",
-    "version": "0.3.0",
-    "sha256": "e3ecc9221947491e089b2598b3f013744981a257d899da58a1c6557f3d61a5ee"
+    "filename": "plover_cycle_translations-0.3.2.tar.gz",
+    "version": "0.3.2",
+    "sha256": "b432154569a0ab2e099a2e0a11074c6b2bf0d3cd2484772f30dd4c626e2a5e1e"
   },
   {
     "name": "plover-debugging-console",
@@ -349,9 +349,9 @@
   },
   {
     "name": "plover-q-and-a",
-    "filename": "plover_q_and_a-0.4.2.tar.gz",
-    "version": "0.4.2",
-    "sha256": "739f0693c2b6a34d8add7fd0175b05ed1a0e3eae1e057f4c745f28095124121c"
+    "filename": "plover_q_and_a-0.4.3.tar.gz",
+    "version": "0.4.3",
+    "sha256": "c131490950327b8dbee5a61bf83095906f6e653057e2da7b55ea08c77dd1ba35"
   },
   {
     "name": "plover-regenpfeifer",
@@ -469,9 +469,9 @@
   },
   {
     "name": "plover-steno-engine-hooks-logger",
-    "filename": "plover_steno_engine_hooks_logger-0.3.5.tar.gz",
-    "version": "0.3.5",
-    "sha256": "3ca6b66133765689952a13268f3078da56c3c37ec7035f74bd7d7a0e47835ddd"
+    "filename": "plover_steno_engine_hooks_logger-0.3.6.tar.gz",
+    "version": "0.3.6",
+    "sha256": "49410d71e8f746353c6ea5709a0af5d29e54cb5a346dfa8e5a6a8e71ace7f08f"
   },
   {
     "name": "plover-stenobee",
