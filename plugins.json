@@ -7,9 +7,9 @@
   },
   {
     "name": "plover-1password",
-    "filename": "plover_1password-0.3.17.tar.gz",
-    "version": "0.3.17",
-    "sha256": "ae990b840960c8d8de7f4ab389a9a3c5d02bad85f5ee7e79c835738223030a2c"
+    "filename": "plover_1password-0.3.18.tar.gz",
+    "version": "0.3.18",
+    "sha256": "3cc94eac12df8ba5e0dd7b09fd54fc048e13f1f2c7664e2dda33d62d7c1355d9"
   },
   {
     "name": "plover-auto-identifier",
@@ -205,9 +205,9 @@
   },
   {
     "name": "plover-local-env-var",
-    "filename": "plover_local_env_var-0.3.6.tar.gz",
-    "version": "0.3.6",
-    "sha256": "c0250a9e01d8cf10dc8514a92dc3fe6ae9fb240f3584cd161cc5e3fbd5311f45"
+    "filename": "plover_local_env_var-0.3.7.tar.gz",
+    "version": "0.3.7",
+    "sha256": "0e0151579d23d2a8482dde94f233f84afb498eab0c50bc9c9859ea8937130f37"
   },
   {
     "name": "plover-maajik",
@@ -325,9 +325,9 @@
   },
   {
     "name": "plover-platform-specific-translation",
-    "filename": "plover_platform_specific_translation-0.2.8.tar.gz",
-    "version": "0.2.8",
-    "sha256": "825776824a9462b6d775b0ff40ef02082f59bff16b13f1365ee7deaf9e23a34f"
+    "filename": "plover_platform_specific_translation-0.2.9.tar.gz",
+    "version": "0.2.9",
+    "sha256": "afb987e58ba936f70e32944dfff7f4da46f36a1458dcb40d2f4b5d54d3dc2da0"
   },
   {
     "name": "plover-plugins-manager",
@@ -415,9 +415,9 @@
   },
   {
     "name": "plover-run-applescript",
-    "filename": "plover_run_applescript-0.3.11.tar.gz",
-    "version": "0.3.11",
-    "sha256": "5fc963c482b2f3170e6b2b41122444e26e7f23f5c1d67dd0950b023242127662"
+    "filename": "plover_run_applescript-0.3.13.tar.gz",
+    "version": "0.3.13",
+    "sha256": "ba46ff7ec118b8a533bd8bd8155f394e01591781cd34a94bbc6662aea605699d"
   },
   {
     "name": "plover-run-shell",
