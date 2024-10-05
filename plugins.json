@@ -205,9 +205,9 @@
   },
   {
     "name": "plover-local-env-var",
-    "filename": "plover_local_env_var-0.3.7.tar.gz",
-    "version": "0.3.7",
-    "sha256": "0e0151579d23d2a8482dde94f233f84afb498eab0c50bc9c9859ea8937130f37"
+    "filename": "plover_local_env_var-0.3.8.tar.gz",
+    "version": "0.3.8",
+    "sha256": "67adc7d33a5dc42b04503510a9eaba078ba55e5b1196696eeea1100ad8a21d2c"
   },
   {
     "name": "plover-maajik",
@@ -325,9 +325,9 @@
   },
   {
     "name": "plover-platform-specific-translation",
-    "filename": "plover_platform_specific_translation-0.2.9.tar.gz",
-    "version": "0.2.9",
-    "sha256": "afb987e58ba936f70e32944dfff7f4da46f36a1458dcb40d2f4b5d54d3dc2da0"
+    "filename": "plover_platform_specific_translation-0.2.10.tar.gz",
+    "version": "0.2.10",
+    "sha256": "98a9986adfaf8b917bb32363f2de108708f9f9685e304982613515c2bec435c7"
   },
   {
     "name": "plover-plugins-manager",
@@ -349,9 +349,9 @@
   },
   {
     "name": "plover-q-and-a",
-    "filename": "plover_q_and_a-0.4.3.tar.gz",
-    "version": "0.4.3",
-    "sha256": "c131490950327b8dbee5a61bf83095906f6e653057e2da7b55ea08c77dd1ba35"
+    "filename": "plover_q_and_a-0.4.4.tar.gz",
+    "version": "0.4.4",
+    "sha256": "49bc3510faf26314e91140de9e0e2ac7834d8874b52c08fa5d49332dfd7dbcbf"
   },
   {
     "name": "plover-regenpfeifer",
