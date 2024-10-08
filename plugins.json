@@ -91,9 +91,9 @@
   },
   {
     "name": "plover-cycle-translations",
-    "filename": "plover_cycle_translations-0.3.2.tar.gz",
-    "version": "0.3.2",
-    "sha256": "b432154569a0ab2e099a2e0a11074c6b2bf0d3cd2484772f30dd4c626e2a5e1e"
+    "filename": "plover_cycle_translations-0.4.0.tar.gz",
+    "version": "0.4.0",
+    "sha256": "bbf53bb4196e2a5488c99e026b74e2134e51a8f7e79ed14f8d0fb960b20cc96b"
   },
   {
     "name": "plover-debugging-console",
