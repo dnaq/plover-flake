@@ -7,9 +7,9 @@
   },
   {
     "name": "plover-1password",
-    "filename": "plover_1password-0.4.0.tar.gz",
-    "version": "0.4.0",
-    "sha256": "bd7726bac0c07413ad34027d7b5100c091a01f7da9ac0271b2411f91d9a7cb19"
+    "filename": "plover_1password-0.4.2.tar.gz",
+    "version": "0.4.2",
+    "sha256": "5f69ade204e9a7ddd72f466843186c73da57fd5b3a4ec3eb8b81c7810b794ef8"
   },
   {
     "name": "plover-auto-identifier",
@@ -205,9 +205,9 @@
   },
   {
     "name": "plover-local-env-var",
-    "filename": "plover_local_env_var-0.3.8.tar.gz",
-    "version": "0.3.8",
-    "sha256": "67adc7d33a5dc42b04503510a9eaba078ba55e5b1196696eeea1100ad8a21d2c"
+    "filename": "plover_local_env_var-0.3.9.tar.gz",
+    "version": "0.3.9",
+    "sha256": "310391931a135e0ecb5b995a3909d58e54aa9a041183e759f111779793980b5a"
   },
   {
     "name": "plover-maajik",
