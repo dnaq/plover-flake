@@ -43,7 +43,12 @@
             curl
             python311Packages.ipython
             jq
+            virtualenv
+            tox
+            pyqt5
           ];
+          # nativeBuildInputs = with pkgs; [ qt5.qttools.dev python3Packages.autopep8 python3Packages.flake8 ];
+          QT_QPA_PLATFORM_PLUGIN_PATH= with pkgs; "${qt5.qtbase.bin}/lib/qt-${qt5.qtbase.version}/plugins";
         };
         packages.default = self.packages.${system}.plover;
         packages.plover = let
