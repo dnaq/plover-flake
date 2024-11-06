@@ -325,9 +325,9 @@
   },
   {
     "name": "plover-platform-specific-translation",
-    "filename": "plover_platform_specific_translation-0.2.10.tar.gz",
-    "version": "0.2.10",
-    "sha256": "98a9986adfaf8b917bb32363f2de108708f9f9685e304982613515c2bec435c7"
+    "filename": "plover_platform_specific_translation-0.3.0.tar.gz",
+    "version": "0.3.0",
+    "sha256": "975dc5a605c184c8e85419c52e0dfac589e29c2c3149cc0d5108af80bf47f5c1"
   },
   {
     "name": "plover-plugins-manager",
