@@ -19,7 +19,7 @@ as well as some extra plugins.
 
 ## Troubleshooting
 
-If a specific plugin fails to build its most likely because of a missing
+If a specific plugin fails to build it is most likely because of a missing
 dependency. In that case that dependency can be added to overrides.nix,
 any pull requests doing so are welcome.
 
@@ -37,4 +37,4 @@ the meantime it is possible to do the following:
 
 In order to support plover2cat the pyqt derivation is overriden with `withMultimedia = true;`.
 This holds even if plover2cat isn't installed, which might entail a bit of a waste of disk space.
-If anyone figures out a good way for plugins to additively add qt features when dependen on, please let me know.
+If anyone figures out a good way for plugins to additively add qt features when depended on, please let me know.
