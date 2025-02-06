@@ -11,6 +11,7 @@
   setuptools,
   wcwidth,
   xlib,
+  evdev,
   sources,
 }: let
   plover-stroke = buildPythonPackage rec {
@@ -38,6 +39,7 @@ in
       wcwidth
       setuptools
       certifi
+      evdev
       #hid
       plover-stroke
       rtf-tokenize
