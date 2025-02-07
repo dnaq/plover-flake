@@ -45,6 +45,16 @@ in
       rtf-tokenize
     ];
 
+    postInstall = ''
+      mkdir -p $out/share/icons/hicolor/128x128/apps
+      cp $src/plover/assets/plover.png $out/share/icons/hicolor/128x128/apps/plover.png
+
+      mkdir -p $out/share/applications
+      cp $src/linux/plover.desktop $out/share/applications/plover.desktop
+      substituteInPlace "$out/share/applications/plover.desktop" \
+        --replace-warn "Exec=plover" "Exec=$out/bin/plover"
+    '';
+
     dontWrapQtApps = true;
     preFixup = ''
       makeWrapperArgs+=("''${qtWrapperArgs[@]}")
