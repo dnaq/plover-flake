@@ -7,6 +7,7 @@
   utils,
   evdev,
   xkbcommon,
+  lxml,
   buildPythonPackage,
   fetchPypi,
 }: final: prev: {
@@ -28,6 +29,9 @@
   });
   plover-uinput = prev.plover-uinput.overrideAttrs (old: {
     propagatedBuildInputs = [evdev xkbcommon];
+  });
+  plover-svg-layout-display = prev.plover-svg-layout-display.overrideAttrs (old: {
+    propagatedBuildInputs = [lxml];
   });
   plover-lapwing-aio = prev.plover-lapwing-aio.overrideAttrs (old: {
     propagatedBuildInputs = [
