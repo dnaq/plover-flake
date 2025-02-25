@@ -1,4 +1,7 @@
 {
+  lib,
+  stdenv,
+  callPackage,
   appdirs,
   Babel,
   buildPythonPackage,
@@ -12,6 +15,7 @@
   wcwidth,
   xlib,
   evdev,
+  appnope,
   sources,
 }: let
   plover-stroke = buildPythonPackage rec {
@@ -24,6 +28,7 @@
     version = "master";
     src = sources.rtf-tokenize;
   };
+  darwinPackages = callPackage ./darwin.nix { };
 in
   qt5.mkDerivationWith buildPythonPackage rec {
     pname = "plover";
@@ -39,10 +44,16 @@ in
       wcwidth
       setuptools
       certifi
-      evdev
       #hid
       plover-stroke
       rtf-tokenize
+    ] ++ lib.optionals (!stdenv.hostPlatform.isDarwin) [
+      evdev
+    ] ++ lib.optionals (stdenv.hostPlatform.isDarwin) [
+      appnope
+      darwinPackages.pyobjc-core
+      darwinPackages.pyobjc-framework-Cocoa
+      darwinPackages.pyobjc-framework-Quartz
     ];
 
     postInstall = ''
