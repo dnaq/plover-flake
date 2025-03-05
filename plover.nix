@@ -5,15 +5,12 @@
   appdirs,
   Babel,
   buildPythonPackage,
-  buildPythonApplication,
   certifi,
-  pyqt6,
   pyside6,
   pyserial,
-  qt5,
+  qt6,
   requests-futures,
   setuptools,
-  setuptools-scm,
   wcwidth,
   xlib,
   evdev,
@@ -23,9 +20,9 @@
   readme-renderer,
   cmarkgfm,
   requests-cache,
-  poetry-core,
   sources,
-}: let
+}:
+let
   plover-stroke = buildPythonPackage {
     pname = "plover_stroke";
     version = "master";
@@ -36,45 +33,23 @@
     version = "master";
     src = sources.rtf-tokenize;
   };
-  pyqt6rc = buildPythonApplication {
-    pname = "pyqt6rc";
-    version = "master";
-    src = sources.pyqt6rc;
-    pyproject = true;
-
-    build-system = [ poetry-core ];
-
-    dependencies = [
-      (buildPythonPackage {
-        pname = "importlib-resources";
-        version = "v5.13.0";
-        src = sources.importlib-resources;
-        pyproject = true;
-
-        build-system = [
-          setuptools
-          setuptools-scm
-        ];
-      })
-      pyqt6
-      pyside6
-    ];
-
-    pythonImportsCheck = [
-      "pyqt6rc"
-    ];
-  };
   darwinPackages = callPackage ./darwin.nix { };
 in
-  qt5.mkDerivationWith buildPythonPackage {
-    pname = "plover";
-    version = "master";
-    src = sources.plover;
-    #checkInputs = [ pytest pytest-qt mock ];
-    propagatedBuildInputs = [
+buildPythonPackage {
+  pname = "plover";
+  version = "master";
+  src = sources.plover;
+
+  nativeBuildInputs = [
+    qt6.qtbase
+    qt6.wrapQtAppsHook
+  ];
+
+  #checkInputs = [ pytest pytest-qt mock ];
+  propagatedBuildInputs =
+    [
       Babel
-      pyqt6
-      xlib
+      pyside6
       pyserial
       appdirs
       wcwidth
@@ -86,33 +61,44 @@ in
       cmarkgfm
       requests-cache
       requests-futures
-      pyqt6rc
       #hid
       plover-stroke
       rtf-tokenize
-    ] ++ lib.optionals (!stdenv.hostPlatform.isDarwin) [
+    ]
+    ++ lib.optionals (!stdenv.hostPlatform.isDarwin) [
       evdev
-    ] ++ lib.optionals (stdenv.hostPlatform.isDarwin) [
+      xlib
+    ]
+    ++ lib.optionals (stdenv.hostPlatform.isDarwin) [
       appnope
       darwinPackages.pyobjc-core
       darwinPackages.pyobjc-framework-Cocoa
       darwinPackages.pyobjc-framework-Quartz
     ];
 
-    postInstall = ''
-      mkdir -p $out/share/icons/hicolor/128x128/apps
-      cp $src/plover/assets/plover.png $out/share/icons/hicolor/128x128/apps/plover.png
+  # postPatch = ''
+  #   substituteInPlace plover_build_utils/setup.py --replace-fail "'rcc'" "'${qt6.qtbase}/libexec/rcc'"
+  #   substituteInPlace plover_build_utils/setup.py --replace-fail "'uic'" "'${qt6.qtbase}/libexec/uic'"
+  # '';
 
-      mkdir -p $out/share/applications
-      cp $src/linux/plover.desktop $out/share/applications/plover.desktop
-      substituteInPlace "$out/share/applications/plover.desktop" \
-        --replace-warn "Exec=plover" "Exec=$out/bin/plover"
-    '';
+  preConfigure = ''
+    export PATH=${qt6.qtbase}/libexec:$PATH
+  '';
 
-    dontWrapQtApps = true;
-    preFixup = ''
-      makeWrapperArgs+=("''${qtWrapperArgs[@]}")
-    '';
+  postInstall = ''
+    mkdir -p $out/share/icons/hicolor/128x128/apps
+    cp $src/plover/assets/plover.png $out/share/icons/hicolor/128x128/apps/plover.png
 
-    doCheck = false;
-  }
+    mkdir -p $out/share/applications
+    cp $src/linux/plover.desktop $out/share/applications/plover.desktop
+    substituteInPlace "$out/share/applications/plover.desktop" \
+      --replace-warn "Exec=plover" "Exec=$out/bin/plover"
+  '';
+
+  dontWrapQtApps = true;
+  preFixup = ''
+    makeWrapperArgs+=("''${qtWrapperArgs[@]}")
+  '';
+
+  doCheck = false;
+}

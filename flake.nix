@@ -13,10 +13,6 @@
     url = "github:python/importlib_resources/v5.13.0";
     flake = false;
   };
-  inputs.pyqt6rc = {
-    url = "github:domarm-comat/pyqt6rc";
-    flake = false;
-  };
   inputs.rtf-tokenize = {
     url = "github:openstenoproject/rtf_tokenize";
     flake = false;
@@ -55,8 +51,7 @@
         };
         packages.default = self.packages.${system}.plover;
         packages.plover = let
-          pyqt6 = pkgs.python311Packages.pyqt6.override {withMultimedia = true;};
-          plover = pkgs.python311Packages.callPackage ./plover.nix {inherit sources pyqt6;};
+          plover = pkgs.python311Packages.callPackage ./plover.nix {inherit sources;};
           with-plugins = f: let
             plugins = pkgs.python311Packages.callPackage ./plugins.nix {inherit plover sources;};
           in
