@@ -9,10 +9,6 @@
     url = "github:greghope667/plover/pyqt6-migration";
     flake = false;
   };
-  inputs.importlib-resources = {
-    url = "github:python/importlib_resources/v5.13.0";
-    flake = false;
-  };
   inputs.rtf-tokenize = {
     url = "github:openstenoproject/rtf_tokenize";
     flake = false;
@@ -45,15 +41,15 @@
           PLUGINREGISTRY = "${sources.plover_plugins_registry}/registry.json";
           packages = with pkgs; [
             curl
-            python311Packages.ipython
+            python3Packages.ipython
             jq
           ];
         };
         packages.default = self.packages.${system}.plover;
         packages.plover = let
-          plover = pkgs.python311Packages.callPackage ./plover.nix {inherit sources;};
+          plover = pkgs.python3Packages.callPackage ./plover.nix {inherit sources;};
           with-plugins = f: let
-            plugins = pkgs.python311Packages.callPackage ./plugins.nix {inherit plover sources;};
+            plugins = pkgs.python3Packages.callPackage ./plugins.nix {inherit plover sources;};
           in
             plover.overrideAttrs (old: {
               propagatedBuildInputs = old.propagatedBuildInputs ++ (f plugins);
