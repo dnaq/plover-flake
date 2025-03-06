@@ -576,6 +576,12 @@
     "sha256": "9e84377627d7513649d1eb7a308c47b5a60b7ee01a38493aa85bf98e956cf3f0"
   },
   {
+    "name": "plover-vipe",
+    "filename": "plover_vipe-1.0.2.tar.gz",
+    "version": "1.0.2",
+    "sha256": "613ff2ad58cb1339c3552d73bbff1bef35e7ecf75e78ee5208462694029a04a5"
+  },
+  {
     "name": "plover-vlc-commands",
     "filename": "plover_vlc_commands-0.6.6.tar.gz",
     "version": "0.6.6",
