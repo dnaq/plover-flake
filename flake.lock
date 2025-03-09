@@ -37,15 +37,16 @@
     "plover": {
       "flake": false,
       "locked": {
-        "lastModified": 1741240379,
-        "narHash": "sha256-DojJEuuVNd5/AR3DzmBe+1KJzFwy7GXstPabyZb6ArE=",
-        "owner": "openstenoproject",
+        "lastModified": 1741504865,
+        "narHash": "sha256-sT6E2hKM5NHDcImd1/Ets/tgNmSgjzEHpZkB8Ltva3Q=",
+        "owner": "greghope667",
         "repo": "plover",
-        "rev": "1234ae6253f26f8e40f48eaa87a96ae26aa42c7e",
+        "rev": "0b32109db712ad5c8e5c5f9a141fc26f0f602550",
         "type": "github"
       },
       "original": {
-        "owner": "openstenoproject",
+        "owner": "greghope667",
+        "ref": "pyqt6-migration",
         "repo": "plover",
         "type": "github"
       }

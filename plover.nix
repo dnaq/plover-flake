@@ -3,36 +3,46 @@
   Babel,
   buildPythonPackage,
   certifi,
-  path,
-  pyqt5,
+  pyside6,
   pyserial,
-  qt5,
+  qt6,
   requests-futures,
   setuptools,
   wcwidth,
   xlib,
   evdev,
+  pkginfo,
+  pygments,
+  readme-renderer,
+  cmarkgfm,
+  requests-cache,
   sources,
 }: let
-  plover-stroke = buildPythonPackage rec {
+  plover-stroke = buildPythonPackage {
     pname = "plover_stroke";
     version = "master";
     src = sources.plover-stroke;
   };
-  rtf-tokenize = buildPythonPackage rec {
+  rtf-tokenize = buildPythonPackage {
     pname = "rtf_tokenize";
     version = "master";
     src = sources.rtf-tokenize;
   };
 in
-  qt5.mkDerivationWith buildPythonPackage rec {
+  buildPythonPackage {
     pname = "plover";
     version = "master";
     src = sources.plover;
+
+    nativeBuildInputs = [
+      qt6.qtbase
+      qt6.wrapQtAppsHook
+    ];
+
     #checkInputs = [ pytest pytest-qt mock ];
     propagatedBuildInputs = [
       Babel
-      pyqt5
+      pyside6
       xlib
       pyserial
       appdirs
@@ -40,10 +50,20 @@ in
       setuptools
       certifi
       evdev
+      pkginfo
+      pygments
+      readme-renderer
+      cmarkgfm
+      requests-cache
+      requests-futures
       #hid
       plover-stroke
       rtf-tokenize
     ];
+
+    preConfigure = ''
+      export PATH=${qt6.qtbase}/libexec:$PATH
+    '';
 
     postInstall = ''
       mkdir -p $out/share/icons/hicolor/128x128/apps
