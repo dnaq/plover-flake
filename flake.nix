@@ -9,6 +9,10 @@
     url = "github:greghope667/plover/pyqt6-migration"; # Temporary, util PR is merged. FIXME
     flake = false;
   };
+  inputs.pyobjc = {
+    url = "github:ronaldoussoren/pyobjc/v11.0";
+    flake = false;
+  };
   inputs.rtf-tokenize = {
     url = "github:openstenoproject/rtf_tokenize";
     flake = false;

@@ -1,4 +1,7 @@
 {
+  lib,
+  stdenv,
+  callPackage,
   appdirs,
   Babel,
   buildPythonPackage,
@@ -16,8 +19,12 @@
   readme-renderer,
   cmarkgfm,
   requests-cache,
+  appnope,
   sources,
 }: let
+  inherit (stdenv.hostPlatform) isDarwin;
+  darwinPackages = callPackage ./darwin.nix {inherit sources;};
+
   plover-stroke = buildPythonPackage {
     pname = "plover_stroke";
     version = "master";
@@ -43,13 +50,11 @@ in
     propagatedBuildInputs = [
       Babel
       pyside6
-      xlib
       pyserial
       appdirs
       wcwidth
       setuptools
       certifi
-      evdev
       pkginfo
       pygments
       readme-renderer
@@ -59,6 +64,14 @@ in
       #hid
       plover-stroke
       rtf-tokenize
+    ] ++ lib.optionals (!isDarwin) [
+      xlib
+      evdev
+    ] ++ lib.optionals (isDarwin) [
+      appnope
+      darwinPackages.pyobjc-core
+      darwinPackages.pyobjc-framework-Cocoa
+      darwinPackages.pyobjc-framework-Quartz
     ];
 
     preConfigure = ''
