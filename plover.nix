@@ -63,6 +63,9 @@ in
 
     preConfigure = ''
       export PATH=${qt6.qtbase}/libexec:$PATH
+      substituteInPlace "plover_build_utils/setup.py" \
+        --replace-fail "'pyside6-rcc'" "'${qt6.qtbase}/libexec/rcc', '-g', 'python'" \
+        --replace-fail "'pyside6-uic'" "'${qt6.qtbase}/libexec/uic', '-g', 'python'"
     '';
 
     postInstall = ''
