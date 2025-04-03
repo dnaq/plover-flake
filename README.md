@@ -6,7 +6,7 @@ Add this flake to your flake inputs, e.g. `inputs.plover-flake.url = "github:dna
 
 Then a plover derivation containing the plugins you want can be built with
 ```nix
-  plover-flake.${system}.plover.with-plugins (ps: with ps; [
+  plover-flake.packages.${system}.plover.with-plugins (ps: with ps; [
       plover-dict-commands
       plover-console-ui
   ];
