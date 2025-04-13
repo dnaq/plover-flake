@@ -3,35 +3,46 @@
   Babel,
   buildPythonPackage,
   certifi,
-  pyqt5,
+  pyside6,
   pyserial,
-  qt5,
+  qt6,
+  requests-futures,
   setuptools,
   wcwidth,
   xlib,
   evdev,
+  pkginfo,
+  pygments,
+  readme-renderer,
+  cmarkgfm,
+  requests-cache,
   inputs,
 }:
 let
-  plover-stroke = buildPythonPackage rec {
+  plover-stroke = buildPythonPackage {
     pname = "plover_stroke";
     version = "master";
     src = inputs.plover-stroke;
   };
-  rtf-tokenize = buildPythonPackage rec {
+  rtf-tokenize = buildPythonPackage {
     pname = "rtf_tokenize";
     version = "master";
     src = inputs.rtf-tokenize;
   };
 in
-qt5.mkDerivationWith buildPythonPackage rec {
+buildPythonPackage {
   pname = "plover";
   version = "master";
   src = inputs.plover;
 
+  nativeBuildInputs = [
+    qt6.qtbase
+    qt6.wrapQtAppsHook
+  ];
+
   propagatedBuildInputs = [
     Babel
-    pyqt5
+    pyside6
     xlib
     pyserial
     appdirs
@@ -39,10 +50,23 @@ qt5.mkDerivationWith buildPythonPackage rec {
     setuptools
     certifi
     evdev
+    pkginfo
+    pygments
+    readme-renderer
+    cmarkgfm
+    requests-cache
+    requests-futures
     #hid
     plover-stroke
     rtf-tokenize
   ];
+
+  preConfigure = ''
+    export PATH=${qt6.qtbase}/libexec:$PATH
+    substituteInPlace "plover_build_utils/setup.py" \
+      --replace-fail "'pyside6-rcc'" "'${qt6.qtbase}/libexec/rcc', '-g', 'python'" \
+      --replace-fail "'pyside6-uic'" "'${qt6.qtbase}/libexec/uic', '-g', 'python'"
+  '';
 
   postInstall = ''
     mkdir -p $out/share/icons/hicolor/128x128/apps
