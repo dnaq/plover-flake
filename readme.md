@@ -9,17 +9,13 @@ Add this flake to your flake inputs, e.g. `inputs.plover-flake.url = "github:dna
 Then a plover derivation containing the plugins you want can be built with
 
 ```nix
-  plover-flake.packages.${system}.plover.with-plugins (ps: with ps; [
-      plover-dict-commands
-      plover-console-ui
-  ];
+inputs.plover-flake.packages.${system}.plover.withPlugins (ps: with ps; [
+  plover-lapwing-aio
+  plover-console-ui
+];
 ```
 
-where `ps` is an attribute set containing all plugins from the plugin registry
-as well as some extra plugins.
-
-> [!NOTE]
-> The plugin names were recently changed to be the same as in the [plugins registry](https://github.com/openstenoproject/plover_plugins_registry). This means that they will now consistently use dashes `-` in the names.
+Where `ps` is an attribute set containing all plugins from the plugin registry, as well as some extra plugins.
 
 ## Troubleshooting
 
