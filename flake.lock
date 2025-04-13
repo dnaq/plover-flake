@@ -37,11 +37,11 @@
     "plover": {
       "flake": false,
       "locked": {
-        "lastModified": 1741850770,
-        "narHash": "sha256-hZwA3ROYM0hsO0AmDBXMly9n5VPOprGgnrclSB/CGps=",
+        "lastModified": 1744268514,
+        "narHash": "sha256-8Hlm2+UiKBZ5VBt11fNSjvkvxuH7fws5riEOGmwi+5c=",
         "owner": "greghope667",
         "repo": "plover",
-        "rev": "cde483f6d445db3a4bd1e03a9a6fff6e01265119",
+        "rev": "5361df48c9ca0217c61f2eaad73393e1a5847036",
         "type": "github"
       },
       "original": {
