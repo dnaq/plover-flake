@@ -22,7 +22,7 @@ jobs:
           nix flake update --commit-lock-file --commit-lockfile-summary "flake.lock: Update"
       - name: Update plugins.json
         run: |
-          nix develop --command ./update.sh
+          nix run .#update
           git add plugins.json && git commit -m 'update plugins.json' || true
       - name: Build flake
         run: |

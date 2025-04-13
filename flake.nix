@@ -1,62 +1,71 @@
 {
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-  inputs.flake-utils.url = "github:numtide/flake-utils";
-  inputs.plover_plugins_registry = {
-    url = "github:openstenoproject/plover_plugins_registry";
-    flake = false;
-  };
-  inputs.plover = {
-    url = "github:openstenoproject/plover";
-    flake = false;
-  };
-  inputs.rtf-tokenize = {
-    url = "github:openstenoproject/rtf_tokenize";
-    flake = false;
-  };
-  inputs.plover-stroke = {
-    url = "github:openstenoproject/plover_stroke";
-    flake = false;
-  };
-  inputs.plover-machine-hid = {
-    url = "github:dnaq/plover-machine-hid";
-    flake = false;
-  };
-  inputs.plover2cat = {
-    url = "github:greenwyrt/plover2CAT";
-    flake = false;
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    plover = {
+      url = "github:openstenoproject/plover";
+      flake = false;
+    };
+    plover_plugins_registry = {
+      url = "github:openstenoproject/plover_plugins_registry";
+      flake = false;
+    };
+    rtf-tokenize = {
+      url = "github:openstenoproject/rtf_tokenize";
+      flake = false;
+    };
+    plover-stroke = {
+      url = "github:openstenoproject/plover_stroke";
+      flake = false;
+    };
+    plover-machine-hid = {
+      url = "github:dnaq/plover-machine-hid";
+      flake = false;
+    };
+    plover2cat = {
+      url = "github:greenwyrt/plover2CAT";
+      flake = false;
+    };
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    flake-utils,
-    ...
-  } @ sources:
-    flake-utils.lib.eachDefaultSystem
-    (
-      system: let
-        pkgs = nixpkgs.legacyPackages.${system};
-      in {
-        devShells.default = pkgs.mkShell {
-          PLUGINREGISTRY = "${sources.plover_plugins_registry}/registry.json";
+  outputs =
+    {
+      nixpkgs,
+      ...
+    }@inputs:
+    let
+      inherit (nixpkgs) lib;
+      systems = lib.systems.flakeExposed;
+      pkgsFor = lib.genAttrs systems (system: import nixpkgs { inherit system; });
+      forEachSystem = f: lib.genAttrs systems (system: f pkgsFor.${system});
+    in
+    {
+      devShells = forEachSystem (pkgs: {
+        default = pkgs.mkShell {
           packages = with pkgs; [
-            curl
-            python3Packages.ipython
-            jq
+            nixfmt-rfc-style
+            statix
+            nixd
           ];
         };
-        packages.default = self.packages.${system}.plover;
-        packages.plover = let
-          pyqt5 = pkgs.python3Packages.pyqt5.override {withMultimedia = true;};
-          plover = pkgs.python3Packages.callPackage ./plover.nix {inherit sources pyqt5;};
-          with-plugins = f: let
-            plugins = pkgs.python3Packages.callPackage ./plugins.nix {inherit plover sources;};
+      });
+
+      packages = forEachSystem (pkgs: rec {
+        default = plover;
+        plover =
+          let
+            plover = pkgs.python3Packages.callPackage ./plover.nix { inherit inputs; };
+            withPlugins =
+              f:
+              let
+                plugins = pkgs.python3Packages.callPackage ./plugins.nix { inherit plover inputs; };
+              in
+              plover.overrideAttrs (old: {
+                propagatedBuildInputs = old.propagatedBuildInputs ++ (f plugins);
+              });
           in
-            plover.overrideAttrs (old: {
-              propagatedBuildInputs = old.propagatedBuildInputs ++ (f plugins);
-            });
-        in
-          plover // {inherit with-plugins;};
-      }
-    );
+          plover // { inherit withPlugins; };
+        update = pkgs.callPackage ./update.nix { inherit inputs; };
+      });
+    };
 }
