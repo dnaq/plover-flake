@@ -49,7 +49,6 @@ in
           options = {
             "Machine Configuration" = {
               machine_type = mkConfig str "Gemini PR";
-
               auto_start = mkConfig bool false;
             };
 
@@ -63,15 +62,10 @@ in
 
             "Gemini PR" = {
               baudrate = mkConfig int 9600;
-
               bytesize = mkConfig int 8;
-
               parity = mkConfig str "N";
-
               port = mkConfig str "/dev/ttyACM0";
-
               stopbits = mkConfig int 1;
-
               timeout = mkConfig float 2.0;
             };
 
