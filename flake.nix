@@ -79,7 +79,6 @@
       });
 
       homeManagerModules = rec {
-        default = plover;
         plover = import ./hm-module.nix self;
       };
     };
