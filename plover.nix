@@ -3,62 +3,83 @@
   Babel,
   buildPythonPackage,
   certifi,
-  path,
-  pyqt5,
+  pyside6,
   pyserial,
-  qt5,
+  qt6,
   requests-futures,
   setuptools,
   wcwidth,
   xlib,
   evdev,
-  sources,
-}: let
-  plover-stroke = buildPythonPackage rec {
+  pkginfo,
+  pygments,
+  readme-renderer,
+  cmarkgfm,
+  requests-cache,
+  inputs,
+}:
+let
+  plover-stroke = buildPythonPackage {
     pname = "plover_stroke";
     version = "master";
-    src = sources.plover-stroke;
+    src = inputs.plover-stroke;
   };
-  rtf-tokenize = buildPythonPackage rec {
+  rtf-tokenize = buildPythonPackage {
     pname = "rtf_tokenize";
     version = "master";
-    src = sources.rtf-tokenize;
+    src = inputs.rtf-tokenize;
   };
 in
-  qt5.mkDerivationWith buildPythonPackage rec {
-    pname = "plover";
-    version = "master";
-    src = sources.plover;
-    #checkInputs = [ pytest pytest-qt mock ];
-    propagatedBuildInputs = [
-      Babel
-      pyqt5
-      xlib
-      pyserial
-      appdirs
-      wcwidth
-      setuptools
-      certifi
-      evdev
-      #hid
-      plover-stroke
-      rtf-tokenize
-    ];
+buildPythonPackage {
+  pname = "plover";
+  version = "master";
+  src = inputs.plover;
 
-    postInstall = ''
-      mkdir -p $out/share/icons/hicolor/128x128/apps
-      cp $src/plover/assets/plover.png $out/share/icons/hicolor/128x128/apps/plover.png
+  nativeBuildInputs = [
+    qt6.qtbase
+    qt6.wrapQtAppsHook
+  ];
 
-      mkdir -p $out/share/applications
-      cp $src/linux/plover.desktop $out/share/applications/plover.desktop
-      substituteInPlace "$out/share/applications/plover.desktop" \
-        --replace-warn "Exec=plover" "Exec=$out/bin/plover"
-    '';
+  buildInputs = [
+    qt6.qtsvg # required for rendering icons
+  ];
 
-    dontWrapQtApps = true;
-    preFixup = ''
-      makeWrapperArgs+=("''${qtWrapperArgs[@]}")
-    '';
+  propagatedBuildInputs = [
+    Babel
+    pyside6
+    xlib
+    pyserial
+    appdirs
+    wcwidth
+    setuptools
+    certifi
+    evdev
+    pkginfo
+    pygments
+    readme-renderer
+    cmarkgfm
+    requests-cache
+    requests-futures
+    plover-stroke
+    rtf-tokenize
+  ];
 
-    doCheck = false;
-  }
+  preConfigure = ''
+    export PATH=${qt6.qtbase}/libexec:$PATH
+    substituteInPlace "plover_build_utils/setup.py" \
+      --replace-fail "'pyside6-rcc'" "'${qt6.qtbase}/libexec/rcc', '-g', 'python'" \
+      --replace-fail "'pyside6-uic'" "'${qt6.qtbase}/libexec/uic', '-g', 'python'"
+  '';
+
+  postInstall = ''
+    mkdir -p $out/share/icons/hicolor/128x128/apps
+    cp $src/plover/assets/plover.png $out/share/icons/hicolor/128x128/apps/plover.png
+
+    mkdir -p $out/share/applications
+    cp $src/linux/plover.desktop $out/share/applications/plover.desktop
+    substituteInPlace "$out/share/applications/plover.desktop" \
+      --replace-warn "Exec=plover" "Exec=$out/bin/plover"
+  '';
+
+  doCheck = false;
+}
