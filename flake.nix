@@ -52,21 +52,27 @@
         };
       });
 
+      ploverPlugins = forEachSystem (
+        pkgs:
+        pkgs.python3Packages.callPackage ./plugins.nix {
+          plover = pkgs.python3Packages.callPackage ./plover.nix { inherit inputs; };
+          inherit inputs;
+        }
+      );
+
       packages = forEachSystem (pkgs: rec {
         default = plover;
         plover =
           let
-            plover = pkgs.python3Packages.callPackage ./plover.nix { inherit inputs; };
+            plover' = pkgs.python3Packages.callPackage ./plover.nix { inherit inputs; };
             withPlugins =
-              f:
-              let
-                plugins = pkgs.python3Packages.callPackage ./plugins.nix { inherit plover inputs; };
-              in
-              plover.overrideAttrs (old: {
-                propagatedBuildInputs = old.propagatedBuildInputs ++ (f plugins);
+              f: # f is a function such as (ps: with ps; [ plugin names ])
+              plover'.overrideAttrs (old: {
+                propagatedBuildInputs = old.propagatedBuildInputs ++ (f self.ploverPlugins);
               });
           in
-          plover // { inherit withPlugins; };
+          plover' // { inherit withPlugins; };
+
         update = pkgs.callPackage ./update.nix { inherit inputs; };
       });
 
