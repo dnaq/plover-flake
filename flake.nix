@@ -68,7 +68,7 @@
             withPlugins =
               f: # f is a function such as (ps: with ps; [ plugin names ])
               plover'.overrideAttrs (old: {
-                propagatedBuildInputs = old.propagatedBuildInputs ++ (f self.ploverPlugins);
+                propagatedBuildInputs = old.propagatedBuildInputs ++ (f self.ploverPlugins.${pkgs.system});
               });
 
             with-plugins = _: throw "The `with-plugins` option has been renamed to `withPlugins`.";
