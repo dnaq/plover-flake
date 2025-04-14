@@ -34,114 +34,81 @@ in
       type =
         with lib.types;
         with lib.options;
+        let
+          mkConfig =
+            type: example:
+            mkOption {
+              inherit example;
+              type = nullOr type;
+              default = null;
+            };
+        in
         nullOr (submodule {
           freeformType = iniFormat.type;
 
           options = {
             "Machine Configuration" = {
-              machine_type = mkOption {
-                type = str;
-                example = "Gemini PR";
-              };
+              machine_type = mkConfig str "Gemini PR";
 
-              auto_start = mkOption {
-                type = bool;
-                example = false;
-              };
+              auto_start = mkConfig bool false;
             };
 
             "Output Configuration" = {
-              undo_levels = mkOption {
-                type = int;
-                example = 100;
-              };
+              undo_levels = mkConfig int 100;
             };
 
             "Translation Frame" = {
-              opacity = mkOption {
-                type = int;
-                example = 100;
-              };
+              opacity = mkConfig int 100;
             };
 
             "Gemini PR" = {
-              baudrate = mkOption {
-                type = int;
-                example = 9600;
-              };
+              baudrate = mkConfig int 9600;
 
-              bytesize = mkOption {
-                type = int;
-                example = 8;
-              };
+              bytesize = mkConfig int 8;
 
-              parity = mkOption {
-                type = str;
-                example = "N";
-              };
+              parity = mkConfig str "N";
 
-              port = mkOption {
-                type = str;
-                example = "/dev/ttyACM0";
-              };
+              port = mkConfig str "/dev/ttyACM0";
 
-              stopbits = mkOption {
-                type = int;
-                example = 1;
-              };
+              stopbits = mkConfig int 1;
 
-              timeout = mkOption {
-                type = float;
-                example = 2.0;
-              };
+              timeout = mkConfig float 2.0;
             };
 
             "Plugins" = {
-              enabled_extensions = mkOption {
-                type = listOf str;
-                example = [
-                  "modal_update"
-                  "plover_auto_reconnect_machine"
-                ];
-              };
+              enabled_extensions = mkConfig (listOf str) [
+                "modal_update"
+                "plover_auto_reconnect_machine"
+              ];
             };
 
             "System" = {
-              name = mkOption {
-                type = str;
-                example = "Lapwing";
-              };
+              name = mkConfig str "Lapwing";
             };
 
             "Startup" = {
-              "start minimized" = mkOption {
-                type = bool;
-                example = false;
-              };
+              "start minimized" = mkConfig bool false;
             };
 
             "Logging Configuration" = {
-              log_file = mkOption {
-                type = str;
-                example = "strokes.log";
-              };
+              log_file = mkConfig str "strokes.log";
             };
 
             "System: Lapwing" = {
-              dictionaries = mkOption {
-                type = listOf (submodule {
-                  options = {
-                    enabled = mkOption {
-                      type = bool;
-                      example = true;
+              dictionaries =
+                mkConfig
+                  (listOf (submodule {
+                    options = {
+                      enabled = mkConfig bool true;
+                      path = mkConfig str "user.json";
                     };
-                    path = mkOption {
-                      type = str;
-                      example = "user.json";
-                    };
-                  };
-                });
-              };
+                  }))
+                  [
+                    {
+                      enabled = true;
+                      path = "user.json";
+                    }
+                  ];
             };
           };
         });
@@ -155,7 +122,10 @@ in
         home.packages = [ cfg.package ];
       }
       (lib.mkIf (cfg.settings != null) {
-        xdg.configFile."plover/plover.cfg".source = (iniFormat.generate cfg.settings);
+        # It is necessary to filter the attrs because the option definitions require a default value, but should be unset in the result.
+        xdg.configFile."plover/plover.cfg".source = iniFormat.generate "plover.cfg" (
+          lib.filterAttrsRecursive (n: v: v != null) cfg.settings
+        );
       })
     ]
   );
