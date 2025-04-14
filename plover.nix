@@ -40,8 +40,11 @@ buildPythonPackage {
     qt6.wrapQtAppsHook
   ];
 
+  buildInputs = [
+    qt6.qtsvg # required for rendering icons
+  ];
+
   propagatedBuildInputs = [
-    qt6.qtsvg
     Babel
     pyside6
     xlib
@@ -57,7 +60,6 @@ buildPythonPackage {
     cmarkgfm
     requests-cache
     requests-futures
-    #hid
     plover-stroke
     rtf-tokenize
   ];

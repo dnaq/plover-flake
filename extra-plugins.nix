@@ -38,7 +38,7 @@ let
   };
 in
 {
-  plover-machine-hid = buildPythonPackage rec {
+  plover-machine-hid = buildPythonPackage {
     pname = "plover-machine-hid";
     version = "master";
     src = inputs.plover-machine-hid;
@@ -48,7 +48,7 @@ in
       bitarray
     ];
   };
-  plover2cat = buildPythonPackage rec {
+  plover2cat = buildPythonPackage {
     pname = "plover2cat";
     version = "master";
     src = inputs.plover2cat;
