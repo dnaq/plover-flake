@@ -31,6 +31,7 @@
 
   outputs =
     {
+      self,
       nixpkgs,
       ...
     }@inputs:
@@ -68,5 +69,10 @@
           plover // { inherit withPlugins; };
         update = pkgs.callPackage ./update.nix { inherit inputs; };
       });
+
+      homeManagerModules = rec {
+        default = plover;
+        plover = import ./hm-module.nix self;
+      };
     };
 }
