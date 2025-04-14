@@ -70,8 +70,10 @@
               plover'.overrideAttrs (old: {
                 propagatedBuildInputs = old.propagatedBuildInputs ++ (f self.ploverPlugins);
               });
+
+            with-plugins = _: throw "The `with-plugins` option has been renamed to `withPlugins`.";
           in
-          plover' // { inherit withPlugins; };
+          plover' // { inherit withPlugins with-plugins; };
 
         update = pkgs.callPackage ./update.nix { inherit inputs; };
       });
