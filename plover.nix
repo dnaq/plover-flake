@@ -41,6 +41,7 @@ buildPythonPackage {
   ];
 
   propagatedBuildInputs = [
+    qt6.qtsvg
     Babel
     pyside6
     xlib
@@ -76,11 +77,6 @@ buildPythonPackage {
     cp $src/linux/plover.desktop $out/share/applications/plover.desktop
     substituteInPlace "$out/share/applications/plover.desktop" \
       --replace-warn "Exec=plover" "Exec=$out/bin/plover"
-  '';
-
-  dontWrapQtApps = true;
-  preFixup = ''
-    makeWrapperArgs+=("''${qtWrapperArgs[@]}")
   '';
 
   doCheck = false;
